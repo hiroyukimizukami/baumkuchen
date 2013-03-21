@@ -10,7 +10,7 @@
 
 @implementation JSONRPCResponse
 
--(id) initWithError:(JSONRPCError*) error AndId:(NSString*) jsonrpcId;
+-(id) initWithError:(id<JSONRPCError>) error AndId:(NSString*) jsonrpcId;
 {
     if (self == [super init]) {
         self.jsonrpcId = jsonrpcId;
@@ -30,7 +30,7 @@
     return self;
 }
 
--(id) initWithErrorForNotification:(JSONRPCError *)error
+-(id) initWithErrorForNotification:(id<JSONRPCError>)error
 {
     if (self == [super init]) {
         self.error = error;

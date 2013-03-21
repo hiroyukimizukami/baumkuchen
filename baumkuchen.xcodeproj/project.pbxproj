@@ -22,7 +22,6 @@
 		2D68BAC716F5BEA9000E9AA3 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68BA2816F59C81000E9AA3 /* libsqlite3.0.dylib */; };
 		2D68BACA16F5C1D0000E9AA3 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BAC916F5C1D0000E9AA3 /* DataSource.m */; };
 		2DAB56E416F8DA72009F9CF2 /* JSONRPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56E316F8DA72009F9CF2 /* JSONRPC.m */; };
-		2DAB56E716F8DD45009F9CF2 /* JSONRPCError.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56E616F8DD45009F9CF2 /* JSONRPCError.m */; };
 		2DAB56EA16FB6191009F9CF2 /* baumkuchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56E916FB6190009F9CF2 /* baumkuchen.m */; };
 		2DAB56ED16FB6248009F9CF2 /* Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56EC16FB6248009F9CF2 /* Validator.m */; };
 		2DAB56FC16FB6278009F9CF2 /* DSEngineSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56EF16FB6277009F9CF2 /* DSEngineSQLite.m */; };
@@ -36,6 +35,9 @@
 		2DAB575616FB6509009F9CF2 /* baumkuchenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB575316FB6509009F9CF2 /* baumkuchenTests.m */; };
 		2DAB575716FB6509009F9CF2 /* DSSQLiteEngineTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB575516FB6509009F9CF2 /* DSSQLiteEngineTest.m */; };
 		2DAB575A16FB651F009F9CF2 /* TestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB575916FB651F009F9CF2 /* TestEntity.m */; };
+		2DAB576416FB66A1009F9CF2 /* JSONRPCErrorMethodNotFound.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB576316FB66A1009F9CF2 /* JSONRPCErrorMethodNotFound.m */; };
+		2DAB576816FB694B009F9CF2 /* JSONRPCErrorInvalidParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB576716FB694B009F9CF2 /* JSONRPCErrorInvalidParams.m */; };
+		2DAB576D16FB6CEB009F9CF2 /* TestJSONRPCErrorMethodNotFound.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB576C16FB6CEB009F9CF2 /* TestJSONRPCErrorMethodNotFound.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,8 +87,6 @@
 		2D68BAD016F8C984000E9AA3 /* DSEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSEngine.h; sourceTree = "<group>"; };
 		2DAB56E216F8DA72009F9CF2 /* JSONRPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPC.h; sourceTree = "<group>"; };
 		2DAB56E316F8DA72009F9CF2 /* JSONRPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPC.m; sourceTree = "<group>"; };
-		2DAB56E516F8DD45009F9CF2 /* JSONRPCError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCError.h; sourceTree = "<group>"; };
-		2DAB56E616F8DD45009F9CF2 /* JSONRPCError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCError.m; sourceTree = "<group>"; };
 		2DAB56E816FB6190009F9CF2 /* baumkuchen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baumkuchen.h; sourceTree = "<group>"; };
 		2DAB56E916FB6190009F9CF2 /* baumkuchen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baumkuchen.m; sourceTree = "<group>"; };
 		2DAB56EB16FB6248009F9CF2 /* Validator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Validator.h; sourceTree = "<group>"; };
@@ -112,6 +112,13 @@
 		2DAB575516FB6509009F9CF2 /* DSSQLiteEngineTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSSQLiteEngineTest.m; sourceTree = "<group>"; };
 		2DAB575816FB651F009F9CF2 /* TestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestEntity.h; sourceTree = "<group>"; };
 		2DAB575916FB651F009F9CF2 /* TestEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestEntity.m; sourceTree = "<group>"; };
+		2DAB576216FB66A1009F9CF2 /* JSONRPCErrorMethodNotFound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCErrorMethodNotFound.h; sourceTree = "<group>"; };
+		2DAB576316FB66A1009F9CF2 /* JSONRPCErrorMethodNotFound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCErrorMethodNotFound.m; sourceTree = "<group>"; };
+		2DAB576516FB670E009F9CF2 /* JSONRPCError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONRPCError.h; sourceTree = "<group>"; };
+		2DAB576616FB694B009F9CF2 /* JSONRPCErrorInvalidParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCErrorInvalidParams.h; sourceTree = "<group>"; };
+		2DAB576716FB694B009F9CF2 /* JSONRPCErrorInvalidParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCErrorInvalidParams.m; sourceTree = "<group>"; };
+		2DAB576B16FB6CEB009F9CF2 /* TestJSONRPCErrorMethodNotFound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestJSONRPCErrorMethodNotFound.h; sourceTree = "<group>"; };
+		2DAB576C16FB6CEB009F9CF2 /* TestJSONRPCErrorMethodNotFound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestJSONRPCErrorMethodNotFound.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +204,7 @@
 		2D68B9DF16F23FFD000E9AA3 /* baumkuchenTests */ = {
 			isa = PBXGroup;
 			children = (
+				2DAB576916FB6CC9009F9CF2 /* Common */,
 				2DAB575216FB6509009F9CF2 /* baumkuchenTests.h */,
 				2DAB575316FB6509009F9CF2 /* baumkuchenTests.m */,
 				2DAB574D16FB6498009F9CF2 /* baumkuchenTests-Info.plist */,
@@ -318,9 +326,29 @@
 		2DAB56E016F8D828009F9CF2 /* JSONRPC */ = {
 			isa = PBXGroup;
 			children = (
-				2DAB56E516F8DD45009F9CF2 /* JSONRPCError.h */,
-				2DAB56E616F8DD45009F9CF2 /* JSONRPCError.m */,
 				2124127B16FAD60C008E257D /* JSONRPCComponent.h */,
+				2DAB576216FB66A1009F9CF2 /* JSONRPCErrorMethodNotFound.h */,
+				2DAB576316FB66A1009F9CF2 /* JSONRPCErrorMethodNotFound.m */,
+				2DAB576516FB670E009F9CF2 /* JSONRPCError.h */,
+				2DAB576616FB694B009F9CF2 /* JSONRPCErrorInvalidParams.h */,
+				2DAB576716FB694B009F9CF2 /* JSONRPCErrorInvalidParams.m */,
+			);
+			name = JSONRPC;
+			sourceTree = "<group>";
+		};
+		2DAB576916FB6CC9009F9CF2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2DAB576A16FB6CCE009F9CF2 /* JSONRPC */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		2DAB576A16FB6CCE009F9CF2 /* JSONRPC */ = {
+			isa = PBXGroup;
+			children = (
+				2DAB576B16FB6CEB009F9CF2 /* TestJSONRPCErrorMethodNotFound.h */,
+				2DAB576C16FB6CEB009F9CF2 /* TestJSONRPCErrorMethodNotFound.m */,
 			);
 			name = JSONRPC;
 			sourceTree = "<group>";
@@ -430,7 +458,6 @@
 				2D68BAB316F5B693000E9AA3 /* FMResultSet.m in Sources */,
 				2D68BACA16F5C1D0000E9AA3 /* DataSource.m in Sources */,
 				2DAB56E416F8DA72009F9CF2 /* JSONRPC.m in Sources */,
-				2DAB56E716F8DD45009F9CF2 /* JSONRPCError.m in Sources */,
 				2DAB56EA16FB6191009F9CF2 /* baumkuchen.m in Sources */,
 				2DAB56ED16FB6248009F9CF2 /* Validator.m in Sources */,
 				2DAB56FC16FB6278009F9CF2 /* DSEngineSQLite.m in Sources */,
@@ -440,6 +467,8 @@
 				2DAB570016FB6278009F9CF2 /* GatewayOutputFilter.m in Sources */,
 				2DAB570116FB6278009F9CF2 /* JSONRPCRequest.m in Sources */,
 				2DAB570216FB6278009F9CF2 /* JSONRPCResponse.m in Sources */,
+				2DAB576416FB66A1009F9CF2 /* JSONRPCErrorMethodNotFound.m in Sources */,
+				2DAB576816FB694B009F9CF2 /* JSONRPCErrorInvalidParams.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +479,7 @@
 				2DAB575616FB6509009F9CF2 /* baumkuchenTests.m in Sources */,
 				2DAB575716FB6509009F9CF2 /* DSSQLiteEngineTest.m in Sources */,
 				2DAB575A16FB651F009F9CF2 /* TestEntity.m in Sources */,
+				2DAB576D16FB6CEB009F9CF2 /* TestJSONRPCErrorMethodNotFound.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

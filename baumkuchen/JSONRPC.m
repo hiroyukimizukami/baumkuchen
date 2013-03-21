@@ -9,7 +9,8 @@
 #import "JSONRPC.h"
 #import "JSONRPCRequest.h"
 #import "JSONRPCResponse.h"
-#import "JSONRPCError.h"
+#import "JSONRPCErrorMethodNotFound.h"
+#import "JSONRPCErrorInvalidParams.h"
 
 @interface JSONRPC()
 
@@ -31,20 +32,33 @@
 -(JSONRPCResponse*) call:(JSONRPCRequest *)request
 {
     NSString* jsonrpcId = [request jsonrpcId];
-    NSString* method = [request method];
+    NSString* methodName = [request method];
     NSDictionary* params = [request params];
     
     //TODO Handle error
-    SEL selector = NSSelectorFromString(method);
-    if (![[self component] respondsToSelector:selector]) {
-        //TODO encapsulate type of error.
-        NSNumber* code = [NSNumber numberWithInt:-32601];
-        JSONRPCError* error = [[JSONRPCError alloc] initWithCode:code AndMessage:@"Method not found" AndData:@[@"The method does not exist / is not available."]];
+    SEL method = NSSelectorFromString(methodName);
+    if (![[self component] respondsToSelector:method]) {
+        JSONRPCErrorMethodNotFound* error = [[JSONRPCErrorMethodNotFound alloc] init];
         JSONRPCResponse* response = [[JSONRPCResponse alloc] initWithError:error AndId:jsonrpcId];
         
         return response;
     }
-    NSArray* result = [[self component] performSelector:selector withObject:params];
+
+    // http://stackoverflow.com/questions/10793116/to-prevent-warning-from-performselect-may-cause-a-leak-because-its-selector-is
+    #pragma clang diagnostic push
+    #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+
+    SEL validator = NSSelectorFromString(@"validate");
+    if (![[self component] performSelector:validator withObject:methodName withObject:params]) {
+        JSONRPCErrorInvalidParams* error = [[JSONRPCErrorInvalidParams alloc] init];
+        JSONRPCResponse* response = [[JSONRPCResponse alloc] initWithError:error AndId:jsonrpcId];
+        
+        return response;
+    }
+    
+    NSArray* result = [[self component] performSelector:method withObject:params];
+    #pragma clang diagnostic pop
+
     
     JSONRPCResponse* response = [[JSONRPCResponse alloc] initWithResult:result AndId:jsonrpcId];
     

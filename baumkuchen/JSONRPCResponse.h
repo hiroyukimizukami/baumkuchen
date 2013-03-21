@@ -14,11 +14,11 @@
 @property (nonatomic, strong) NSString* jsonrpc;
 @property (nonatomic, strong) NSString* jsonrpcId; // As instead of 'id' (circumvent reserved word).
 @property (nonatomic, strong) NSArray* result;
-@property (nonatomic, strong) JSONRPCError* error;
+@property (nonatomic, strong) id<JSONRPCError> error;
 
--(id) initWithError:(JSONRPCError*) error AndId:(NSString*) jsonrpcId;
+-(id) initWithError:(id<JSONRPCError>) error AndId:(NSString*) jsonrpcId;
 -(id) initWithResult:(NSArray*) result AndId:(NSString*) jsonrpcId;
--(id) initWithErrorForNotification:(JSONRPCError*) error;
+-(id) initWithErrorForNotification:(id<JSONRPCError>) error;
 -(id) initWithResultForNotification:(NSArray*) result;
 
 -(NSDictionary*) build;
