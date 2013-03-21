@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D68B9C916F23FFD000E9AA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68B9C816F23FFD000E9AA3 /* Foundation.framework */; };
+		2D68B9D816F23FFD000E9AA3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68B9D716F23FFD000E9AA3 /* SenTestingKit.framework */; };
+		2D68B9DB16F23FFD000E9AA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68B9C816F23FFD000E9AA3 /* Foundation.framework */; };
+		2D68B9E416F23FFD000E9AA3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D68B9E216F23FFD000E9AA3 /* InfoPlist.strings */; };
+		2D68B9E716F23FFD000E9AA3 /* baumkuchenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68B9E616F23FFD000E9AA3 /* baumkuchenTests.m */; };
+		2D68BA2916F59C81000E9AA3 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68BA2816F59C81000E9AA3 /* libsqlite3.0.dylib */; };
+		2D68BA5716F5A130000E9AA3 /* DSSQLiteEngineTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA5616F5A130000E9AA3 /* DSSQLiteEngineTest.m */; };
+		2D68BAAF16F5B693000E9AA3 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA9716F5AA16000E9AA3 /* FMDatabase.m */; };
+		2D68BAB016F5B693000E9AA3 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA9916F5AA16000E9AA3 /* FMDatabaseAdditions.m */; };
+		2D68BAB116F5B693000E9AA3 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA9B16F5AA16000E9AA3 /* FMDatabasePool.m */; };
+		2D68BAB216F5B693000E9AA3 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA9D16F5AA16000E9AA3 /* FMDatabaseQueue.m */; };
+		2D68BAB316F5B693000E9AA3 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA9F16F5AA16000E9AA3 /* FMResultSet.m */; };
+		2D68BAB416F5B6A8000E9AA3 /* baumkuchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA0E16F244B6000E9AA3 /* baumkuchen.m */; };
+		2D68BAB516F5B6A8000E9AA3 /* Gateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA1416F244B6000E9AA3 /* Gateway.m */; };
+		2D68BAB616F5B6A8000E9AA3 /* GatewayCallHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA1616F244B6000E9AA3 /* GatewayCallHandler.m */; };
+		2D68BAB716F5B6A8000E9AA3 /* JSONRPCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA1816F244B6000E9AA3 /* JSONRPCRequest.m */; };
+		2D68BAB816F5B6A8000E9AA3 /* JSONRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA1A16F244B6000E9AA3 /* JSONRPCResponse.m */; };
+		2D68BAB916F5B6A8000E9AA3 /* GatewayOutputFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA1C16F244B6000E9AA3 /* GatewayOutputFilter.m */; };
+		2D68BABA16F5B6A8000E9AA3 /* DSEngineSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA1016F244B6000E9AA3 /* DSEngineSQLite.m */; };
+		2D68BABB16F5B6A8000E9AA3 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA1216F244B6000E9AA3 /* Entity.m */; };
+		2D68BABC16F5B6A8000E9AA3 /* Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA2616F244C4000E9AA3 /* Validator.m */; };
+		2D68BABE16F5B753000E9AA3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68BABD16F5B753000E9AA3 /* UIKit.framework */; };
+		2D68BABF16F5B7F1000E9AA3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68BABD16F5B753000E9AA3 /* UIKit.framework */; };
+		2D68BAC516F5BD09000E9AA3 /* TestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BAC416F5BD09000E9AA3 /* TestEntity.m */; };
+		2D68BAC616F5BE1C000E9AA3 /* libbaumkuchen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68B9C516F23FFD000E9AA3 /* libbaumkuchen.a */; };
+		2D68BAC716F5BEA9000E9AA3 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68BA2816F59C81000E9AA3 /* libsqlite3.0.dylib */; };
+		2D68BACA16F5C1D0000E9AA3 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BAC916F5C1D0000E9AA3 /* DataSource.m */; };
+		2DAB56E416F8DA72009F9CF2 /* JSONRPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56E316F8DA72009F9CF2 /* JSONRPC.m */; };
+		2DAB56E716F8DD45009F9CF2 /* JSONRPCError.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56E616F8DD45009F9CF2 /* JSONRPCError.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D68BAC016F5BB09000E9AA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D68B9BD16F23FFD000E9AA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D68B9C416F23FFD000E9AA3;
+			remoteInfo = baumkuchen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2D68B9C316F23FFD000E9AA3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2124127B16FAD60C008E257D /* JSONRPCComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONRPCComponent.h; sourceTree = "<group>"; };
+		2D68B9C516F23FFD000E9AA3 /* libbaumkuchen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbaumkuchen.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D68B9C816F23FFD000E9AA3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2D68B9CC16F23FFD000E9AA3 /* baumkuchen-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "baumkuchen-Prefix.pch"; sourceTree = "<group>"; };
+		2D68B9D616F23FFD000E9AA3 /* baumkuchenTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = baumkuchenTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D68B9D716F23FFD000E9AA3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2D68B9E116F23FFD000E9AA3 /* baumkuchenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "baumkuchenTests-Info.plist"; sourceTree = "<group>"; };
+		2D68B9E316F23FFD000E9AA3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2D68B9E516F23FFD000E9AA3 /* baumkuchenTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = baumkuchenTests.h; sourceTree = "<group>"; };
+		2D68B9E616F23FFD000E9AA3 /* baumkuchenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = baumkuchenTests.m; sourceTree = "<group>"; };
+		2D68BA0216F243D4000E9AA3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
+		2D68BA0D16F244B6000E9AA3 /* baumkuchen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = baumkuchen.h; path = src/baumkuchen.h; sourceTree = SOURCE_ROOT; };
+		2D68BA0E16F244B6000E9AA3 /* baumkuchen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = baumkuchen.m; path = src/baumkuchen.m; sourceTree = SOURCE_ROOT; };
+		2D68BA0F16F244B6000E9AA3 /* DSEngineSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSEngineSQLite.h; path = src/DSEngineSQLite.h; sourceTree = SOURCE_ROOT; };
+		2D68BA1016F244B6000E9AA3 /* DSEngineSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSEngineSQLite.m; path = src/DSEngineSQLite.m; sourceTree = SOURCE_ROOT; };
+		2D68BA1116F244B6000E9AA3 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Entity.h; path = src/Entity.h; sourceTree = SOURCE_ROOT; };
+		2D68BA1216F244B6000E9AA3 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Entity.m; path = src/Entity.m; sourceTree = SOURCE_ROOT; };
+		2D68BA1316F244B6000E9AA3 /* Gateway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gateway.h; path = src/Gateway.h; sourceTree = SOURCE_ROOT; };
+		2D68BA1416F244B6000E9AA3 /* Gateway.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gateway.m; path = src/Gateway.m; sourceTree = SOURCE_ROOT; };
+		2D68BA1516F244B6000E9AA3 /* GatewayCallHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GatewayCallHandler.h; path = src/GatewayCallHandler.h; sourceTree = SOURCE_ROOT; };
+		2D68BA1616F244B6000E9AA3 /* GatewayCallHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GatewayCallHandler.m; path = src/GatewayCallHandler.m; sourceTree = SOURCE_ROOT; };
+		2D68BA1716F244B6000E9AA3 /* JSONRPCRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONRPCRequest.h; path = src/JSONRPCRequest.h; sourceTree = SOURCE_ROOT; };
+		2D68BA1816F244B6000E9AA3 /* JSONRPCRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONRPCRequest.m; path = src/JSONRPCRequest.m; sourceTree = SOURCE_ROOT; };
+		2D68BA1916F244B6000E9AA3 /* JSONRPCResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONRPCResponse.h; path = src/JSONRPCResponse.h; sourceTree = SOURCE_ROOT; };
+		2D68BA1A16F244B6000E9AA3 /* JSONRPCResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONRPCResponse.m; path = src/JSONRPCResponse.m; sourceTree = SOURCE_ROOT; };
+		2D68BA1B16F244B6000E9AA3 /* GatewayOutputFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GatewayOutputFilter.h; path = src/GatewayOutputFilter.h; sourceTree = SOURCE_ROOT; };
+		2D68BA1C16F244B6000E9AA3 /* GatewayOutputFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GatewayOutputFilter.m; path = src/GatewayOutputFilter.m; sourceTree = SOURCE_ROOT; };
+		2D68BA1D16F244B6000E9AA3 /* Validator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Validator.h; path = src/Validator.h; sourceTree = SOURCE_ROOT; };
+		2D68BA2616F244C4000E9AA3 /* Validator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Validator.m; path = src/Validator.m; sourceTree = SOURCE_ROOT; };
+		2D68BA2816F59C81000E9AA3 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		2D68BA5516F5A130000E9AA3 /* DSSQLiteEngineTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSSQLiteEngineTest.h; sourceTree = "<group>"; };
+		2D68BA5616F5A130000E9AA3 /* DSSQLiteEngineTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSSQLiteEngineTest.m; sourceTree = "<group>"; };
+		2D68BA9616F5AA16000E9AA3 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = ../../../git/clone/fmdb/src/FMDatabase.h; sourceTree = "<group>"; };
+		2D68BA9716F5AA16000E9AA3 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = ../../../git/clone/fmdb/src/FMDatabase.m; sourceTree = "<group>"; };
+		2D68BA9816F5AA16000E9AA3 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = ../../../git/clone/fmdb/src/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		2D68BA9916F5AA16000E9AA3 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = ../../../git/clone/fmdb/src/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		2D68BA9A16F5AA16000E9AA3 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = ../../../git/clone/fmdb/src/FMDatabasePool.h; sourceTree = "<group>"; };
+		2D68BA9B16F5AA16000E9AA3 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = ../../../git/clone/fmdb/src/FMDatabasePool.m; sourceTree = "<group>"; };
+		2D68BA9C16F5AA16000E9AA3 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = ../../../git/clone/fmdb/src/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		2D68BA9D16F5AA16000E9AA3 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = ../../../git/clone/fmdb/src/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		2D68BA9E16F5AA16000E9AA3 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = ../../../git/clone/fmdb/src/FMResultSet.h; sourceTree = "<group>"; };
+		2D68BA9F16F5AA16000E9AA3 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = ../../../git/clone/fmdb/src/FMResultSet.m; sourceTree = "<group>"; };
+		2D68BABD16F5B753000E9AA3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2D68BAC316F5BD09000E9AA3 /* TestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestEntity.h; sourceTree = "<group>"; };
+		2D68BAC416F5BD09000E9AA3 /* TestEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestEntity.m; sourceTree = "<group>"; };
+		2D68BAC816F5C1D0000E9AA3 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		2D68BAC916F5C1D0000E9AA3 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		2D68BAD016F8C984000E9AA3 /* DSEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSEngine.h; sourceTree = "<group>"; };
+		2DAB56E216F8DA72009F9CF2 /* JSONRPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPC.h; sourceTree = "<group>"; };
+		2DAB56E316F8DA72009F9CF2 /* JSONRPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPC.m; sourceTree = "<group>"; };
+		2DAB56E516F8DD45009F9CF2 /* JSONRPCError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCError.h; sourceTree = "<group>"; };
+		2DAB56E616F8DD45009F9CF2 /* JSONRPCError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCError.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D68B9C216F23FFD000E9AA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D68BABE16F5B753000E9AA3 /* UIKit.framework in Frameworks */,
+				2D68BA2916F59C81000E9AA3 /* libsqlite3.0.dylib in Frameworks */,
+				2D68B9C916F23FFD000E9AA3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D68B9D216F23FFD000E9AA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D68BAC716F5BEA9000E9AA3 /* libsqlite3.0.dylib in Frameworks */,
+				2D68BAC616F5BE1C000E9AA3 /* libbaumkuchen.a in Frameworks */,
+				2D68BABF16F5B7F1000E9AA3 /* UIKit.framework in Frameworks */,
+				2D68B9D816F23FFD000E9AA3 /* SenTestingKit.framework in Frameworks */,
+				2D68B9DB16F23FFD000E9AA3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D68B9BC16F23FFD000E9AA3 = {
+			isa = PBXGroup;
+			children = (
+				2D68BA9416F5A9D6000E9AA3 /* dependency */,
+				2D68B9CA16F23FFD000E9AA3 /* baumkuchen */,
+				2D68B9DF16F23FFD000E9AA3 /* baumkuchenTests */,
+				2D68B9C716F23FFD000E9AA3 /* Frameworks */,
+				2D68B9C616F23FFD000E9AA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D68B9C616F23FFD000E9AA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D68B9C516F23FFD000E9AA3 /* libbaumkuchen.a */,
+				2D68B9D616F23FFD000E9AA3 /* baumkuchenTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D68B9C716F23FFD000E9AA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D68BA2816F59C81000E9AA3 /* libsqlite3.0.dylib */,
+				2D68BABD16F5B753000E9AA3 /* UIKit.framework */,
+				2D68B9C816F23FFD000E9AA3 /* Foundation.framework */,
+				2D68B9D716F23FFD000E9AA3 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D68B9CA16F23FFD000E9AA3 /* baumkuchen */ = {
+			isa = PBXGroup;
+			children = (
+				2D68BA0D16F244B6000E9AA3 /* baumkuchen.h */,
+				2D68BA0E16F244B6000E9AA3 /* baumkuchen.m */,
+				2D68B9F316F242F0000E9AA3 /* Gateway */,
+				2D68B9F216F242E6000E9AA3 /* DataSource */,
+				2D68B9F116F242DF000E9AA3 /* Model */,
+				2D68B9F016F242D2000E9AA3 /* Common */,
+				2D68BA0216F243D4000E9AA3 /* README.md */,
+				2D68B9CB16F23FFD000E9AA3 /* Supporting Files */,
+			);
+			path = baumkuchen;
+			sourceTree = "<group>";
+		};
+		2D68B9CB16F23FFD000E9AA3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D68B9CC16F23FFD000E9AA3 /* baumkuchen-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2D68B9DF16F23FFD000E9AA3 /* baumkuchenTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D68BAC216F5BCEB000E9AA3 /* Model */,
+				2D68BA5416F5A115000E9AA3 /* DataSource */,
+				2D68B9E516F23FFD000E9AA3 /* baumkuchenTests.h */,
+				2D68B9E616F23FFD000E9AA3 /* baumkuchenTests.m */,
+				2D68B9E016F23FFD000E9AA3 /* Supporting Files */,
+			);
+			path = baumkuchenTests;
+			sourceTree = "<group>";
+		};
+		2D68B9E016F23FFD000E9AA3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D68B9E116F23FFD000E9AA3 /* baumkuchenTests-Info.plist */,
+				2D68B9E216F23FFD000E9AA3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2D68B9F016F242D2000E9AA3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2DAB56E016F8D828009F9CF2 /* JSONRPC */,
+				2D68BA2616F244C4000E9AA3 /* Validator.m */,
+				2D68BA1D16F244B6000E9AA3 /* Validator.h */,
+				2DAB56E216F8DA72009F9CF2 /* JSONRPC.h */,
+				2DAB56E316F8DA72009F9CF2 /* JSONRPC.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		2D68B9F116F242DF000E9AA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D68BA1116F244B6000E9AA3 /* Entity.h */,
+				2D68BA1216F244B6000E9AA3 /* Entity.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2D68B9F216F242E6000E9AA3 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				2D68BAD416F8D2C7000E9AA3 /* Engine */,
+				2D68BAC816F5C1D0000E9AA3 /* DataSource.h */,
+				2D68BAC916F5C1D0000E9AA3 /* DataSource.m */,
+				2D68BAD016F8C984000E9AA3 /* DSEngine.h */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		2D68B9F316F242F0000E9AA3 /* Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				2D68BA1316F244B6000E9AA3 /* Gateway.h */,
+				2D68BA1416F244B6000E9AA3 /* Gateway.m */,
+				2D68BA1516F244B6000E9AA3 /* GatewayCallHandler.h */,
+				2D68BA1616F244B6000E9AA3 /* GatewayCallHandler.m */,
+				2D68BA1B16F244B6000E9AA3 /* GatewayOutputFilter.h */,
+				2D68BA1C16F244B6000E9AA3 /* GatewayOutputFilter.m */,
+			);
+			name = Gateway;
+			sourceTree = "<group>";
+		};
+		2D68BA5416F5A115000E9AA3 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				2D68BA5516F5A130000E9AA3 /* DSSQLiteEngineTest.h */,
+				2D68BA5616F5A130000E9AA3 /* DSSQLiteEngineTest.m */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		2D68BA9416F5A9D6000E9AA3 /* dependency */ = {
+			isa = PBXGroup;
+			children = (
+				2D68BA9516F5A9FC000E9AA3 /* fmdb */,
+			);
+			name = dependency;
+			sourceTree = "<group>";
+		};
+		2D68BA9516F5A9FC000E9AA3 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				2D68BA9616F5AA16000E9AA3 /* FMDatabase.h */,
+				2D68BA9716F5AA16000E9AA3 /* FMDatabase.m */,
+				2D68BA9816F5AA16000E9AA3 /* FMDatabaseAdditions.h */,
+				2D68BA9916F5AA16000E9AA3 /* FMDatabaseAdditions.m */,
+				2D68BA9A16F5AA16000E9AA3 /* FMDatabasePool.h */,
+				2D68BA9B16F5AA16000E9AA3 /* FMDatabasePool.m */,
+				2D68BA9C16F5AA16000E9AA3 /* FMDatabaseQueue.h */,
+				2D68BA9D16F5AA16000E9AA3 /* FMDatabaseQueue.m */,
+				2D68BA9E16F5AA16000E9AA3 /* FMResultSet.h */,
+				2D68BA9F16F5AA16000E9AA3 /* FMResultSet.m */,
+			);
+			name = fmdb;
+			sourceTree = "<group>";
+		};
+		2D68BAC216F5BCEB000E9AA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D68BAC316F5BD09000E9AA3 /* TestEntity.h */,
+				2D68BAC416F5BD09000E9AA3 /* TestEntity.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2D68BAD416F8D2C7000E9AA3 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				2D68BA0F16F244B6000E9AA3 /* DSEngineSQLite.h */,
+				2D68BA1016F244B6000E9AA3 /* DSEngineSQLite.m */,
+			);
+			name = Engine;
+			sourceTree = "<group>";
+		};
+		2DAB56E016F8D828009F9CF2 /* JSONRPC */ = {
+			isa = PBXGroup;
+			children = (
+				2D68BA1716F244B6000E9AA3 /* JSONRPCRequest.h */,
+				2D68BA1816F244B6000E9AA3 /* JSONRPCRequest.m */,
+				2D68BA1916F244B6000E9AA3 /* JSONRPCResponse.h */,
+				2D68BA1A16F244B6000E9AA3 /* JSONRPCResponse.m */,
+				2DAB56E516F8DD45009F9CF2 /* JSONRPCError.h */,
+				2DAB56E616F8DD45009F9CF2 /* JSONRPCError.m */,
+				2124127B16FAD60C008E257D /* JSONRPCComponent.h */,
+			);
+			name = JSONRPC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D68B9C416F23FFD000E9AA3 /* baumkuchen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D68B9EA16F23FFD000E9AA3 /* Build configuration list for PBXNativeTarget "baumkuchen" */;
+			buildPhases = (
+				2D68B9C116F23FFD000E9AA3 /* Sources */,
+				2D68B9C216F23FFD000E9AA3 /* Frameworks */,
+				2D68B9C316F23FFD000E9AA3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = baumkuchen;
+			productName = baumkuchen;
+			productReference = 2D68B9C516F23FFD000E9AA3 /* libbaumkuchen.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2D68B9D516F23FFD000E9AA3 /* baumkuchenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D68B9ED16F23FFD000E9AA3 /* Build configuration list for PBXNativeTarget "baumkuchenTests" */;
+			buildPhases = (
+				2D68B9D116F23FFD000E9AA3 /* Sources */,
+				2D68B9D216F23FFD000E9AA3 /* Frameworks */,
+				2D68B9D316F23FFD000E9AA3 /* Resources */,
+				2D68B9D416F23FFD000E9AA3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D68BAC116F5BB09000E9AA3 /* PBXTargetDependency */,
+			);
+			name = baumkuchenTests;
+			productName = baumkuchenTests;
+			productReference = 2D68B9D616F23FFD000E9AA3 /* baumkuchenTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D68B9BD16F23FFD000E9AA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = hiroyuki.mizukami;
+			};
+			buildConfigurationList = 2D68B9C016F23FFD000E9AA3 /* Build configuration list for PBXProject "baumkuchen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2D68B9BC16F23FFD000E9AA3;
+			productRefGroup = 2D68B9C616F23FFD000E9AA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D68B9C416F23FFD000E9AA3 /* baumkuchen */,
+				2D68B9D516F23FFD000E9AA3 /* baumkuchenTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D68B9D316F23FFD000E9AA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D68B9E416F23FFD000E9AA3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D68B9D416F23FFD000E9AA3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D68B9C116F23FFD000E9AA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D68BAB416F5B6A8000E9AA3 /* baumkuchen.m in Sources */,
+				2D68BAB516F5B6A8000E9AA3 /* Gateway.m in Sources */,
+				2D68BAB616F5B6A8000E9AA3 /* GatewayCallHandler.m in Sources */,
+				2D68BAB716F5B6A8000E9AA3 /* JSONRPCRequest.m in Sources */,
+				2D68BAB816F5B6A8000E9AA3 /* JSONRPCResponse.m in Sources */,
+				2D68BAB916F5B6A8000E9AA3 /* GatewayOutputFilter.m in Sources */,
+				2D68BABA16F5B6A8000E9AA3 /* DSEngineSQLite.m in Sources */,
+				2D68BABB16F5B6A8000E9AA3 /* Entity.m in Sources */,
+				2D68BABC16F5B6A8000E9AA3 /* Validator.m in Sources */,
+				2D68BAAF16F5B693000E9AA3 /* FMDatabase.m in Sources */,
+				2D68BAB016F5B693000E9AA3 /* FMDatabaseAdditions.m in Sources */,
+				2D68BAB116F5B693000E9AA3 /* FMDatabasePool.m in Sources */,
+				2D68BAB216F5B693000E9AA3 /* FMDatabaseQueue.m in Sources */,
+				2D68BAB316F5B693000E9AA3 /* FMResultSet.m in Sources */,
+				2D68BACA16F5C1D0000E9AA3 /* DataSource.m in Sources */,
+				2DAB56E416F8DA72009F9CF2 /* JSONRPC.m in Sources */,
+				2DAB56E716F8DD45009F9CF2 /* JSONRPCError.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D68B9D116F23FFD000E9AA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D68B9E716F23FFD000E9AA3 /* baumkuchenTests.m in Sources */,
+				2D68BA5716F5A130000E9AA3 /* DSSQLiteEngineTest.m in Sources */,
+				2D68BAC516F5BD09000E9AA3 /* TestEntity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D68BAC116F5BB09000E9AA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D68B9C416F23FFD000E9AA3 /* baumkuchen */;
+			targetProxy = 2D68BAC016F5BB09000E9AA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D68B9E216F23FFD000E9AA3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D68B9E316F23FFD000E9AA3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D68B9E816F23FFD000E9AA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2D68B9E916F23FFD000E9AA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D68B9EB16F23FFD000E9AA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/baumkuchen.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "baumkuchen/baumkuchen-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2D68B9EC16F23FFD000E9AA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/baumkuchen.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "baumkuchen/baumkuchen-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2D68B9EE16F23FFD000E9AA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "baumkuchen/baumkuchen-Prefix.pch";
+				INFOPLIST_FILE = "baumkuchenTests/baumkuchenTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2D68B9EF16F23FFD000E9AA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "baumkuchen/baumkuchen-Prefix.pch";
+				INFOPLIST_FILE = "baumkuchenTests/baumkuchenTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D68B9C016F23FFD000E9AA3 /* Build configuration list for PBXProject "baumkuchen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D68B9E816F23FFD000E9AA3 /* Debug */,
+				2D68B9E916F23FFD000E9AA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D68B9EA16F23FFD000E9AA3 /* Build configuration list for PBXNativeTarget "baumkuchen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D68B9EB16F23FFD000E9AA3 /* Debug */,
+				2D68B9EC16F23FFD000E9AA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D68B9ED16F23FFD000E9AA3 /* Build configuration list for PBXNativeTarget "baumkuchenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D68B9EE16F23FFD000E9AA3 /* Debug */,
+				2D68B9EF16F23FFD000E9AA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D68B9BD16F23FFD000E9AA3 /* Project object */;
+}
