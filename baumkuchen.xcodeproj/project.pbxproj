@@ -10,32 +10,32 @@
 		2D68B9C916F23FFD000E9AA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68B9C816F23FFD000E9AA3 /* Foundation.framework */; };
 		2D68B9D816F23FFD000E9AA3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68B9D716F23FFD000E9AA3 /* SenTestingKit.framework */; };
 		2D68B9DB16F23FFD000E9AA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68B9C816F23FFD000E9AA3 /* Foundation.framework */; };
-		2D68B9E416F23FFD000E9AA3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D68B9E216F23FFD000E9AA3 /* InfoPlist.strings */; };
-		2D68B9E716F23FFD000E9AA3 /* baumkuchenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68B9E616F23FFD000E9AA3 /* baumkuchenTests.m */; };
 		2D68BA2916F59C81000E9AA3 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68BA2816F59C81000E9AA3 /* libsqlite3.0.dylib */; };
-		2D68BA5716F5A130000E9AA3 /* DSSQLiteEngineTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA5616F5A130000E9AA3 /* DSSQLiteEngineTest.m */; };
 		2D68BAAF16F5B693000E9AA3 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA9716F5AA16000E9AA3 /* FMDatabase.m */; };
 		2D68BAB016F5B693000E9AA3 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA9916F5AA16000E9AA3 /* FMDatabaseAdditions.m */; };
 		2D68BAB116F5B693000E9AA3 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA9B16F5AA16000E9AA3 /* FMDatabasePool.m */; };
 		2D68BAB216F5B693000E9AA3 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA9D16F5AA16000E9AA3 /* FMDatabaseQueue.m */; };
 		2D68BAB316F5B693000E9AA3 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA9F16F5AA16000E9AA3 /* FMResultSet.m */; };
-		2D68BAB416F5B6A8000E9AA3 /* baumkuchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA0E16F244B6000E9AA3 /* baumkuchen.m */; };
-		2D68BAB516F5B6A8000E9AA3 /* Gateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA1416F244B6000E9AA3 /* Gateway.m */; };
-		2D68BAB616F5B6A8000E9AA3 /* GatewayCallHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA1616F244B6000E9AA3 /* GatewayCallHandler.m */; };
-		2D68BAB716F5B6A8000E9AA3 /* JSONRPCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA1816F244B6000E9AA3 /* JSONRPCRequest.m */; };
-		2D68BAB816F5B6A8000E9AA3 /* JSONRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA1A16F244B6000E9AA3 /* JSONRPCResponse.m */; };
-		2D68BAB916F5B6A8000E9AA3 /* GatewayOutputFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA1C16F244B6000E9AA3 /* GatewayOutputFilter.m */; };
-		2D68BABA16F5B6A8000E9AA3 /* DSEngineSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA1016F244B6000E9AA3 /* DSEngineSQLite.m */; };
-		2D68BABB16F5B6A8000E9AA3 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA1216F244B6000E9AA3 /* Entity.m */; };
-		2D68BABC16F5B6A8000E9AA3 /* Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BA2616F244C4000E9AA3 /* Validator.m */; };
 		2D68BABE16F5B753000E9AA3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68BABD16F5B753000E9AA3 /* UIKit.framework */; };
 		2D68BABF16F5B7F1000E9AA3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68BABD16F5B753000E9AA3 /* UIKit.framework */; };
-		2D68BAC516F5BD09000E9AA3 /* TestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BAC416F5BD09000E9AA3 /* TestEntity.m */; };
 		2D68BAC616F5BE1C000E9AA3 /* libbaumkuchen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68B9C516F23FFD000E9AA3 /* libbaumkuchen.a */; };
 		2D68BAC716F5BEA9000E9AA3 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D68BA2816F59C81000E9AA3 /* libsqlite3.0.dylib */; };
 		2D68BACA16F5C1D0000E9AA3 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BAC916F5C1D0000E9AA3 /* DataSource.m */; };
 		2DAB56E416F8DA72009F9CF2 /* JSONRPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56E316F8DA72009F9CF2 /* JSONRPC.m */; };
 		2DAB56E716F8DD45009F9CF2 /* JSONRPCError.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56E616F8DD45009F9CF2 /* JSONRPCError.m */; };
+		2DAB56EA16FB6191009F9CF2 /* baumkuchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56E916FB6190009F9CF2 /* baumkuchen.m */; };
+		2DAB56ED16FB6248009F9CF2 /* Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56EC16FB6248009F9CF2 /* Validator.m */; };
+		2DAB56FC16FB6278009F9CF2 /* DSEngineSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56EF16FB6277009F9CF2 /* DSEngineSQLite.m */; };
+		2DAB56FD16FB6278009F9CF2 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56F116FB6277009F9CF2 /* Entity.m */; };
+		2DAB56FE16FB6278009F9CF2 /* Gateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56F316FB6277009F9CF2 /* Gateway.m */; };
+		2DAB56FF16FB6278009F9CF2 /* GatewayCallHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56F516FB6277009F9CF2 /* GatewayCallHandler.m */; };
+		2DAB570016FB6278009F9CF2 /* GatewayOutputFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56F716FB6277009F9CF2 /* GatewayOutputFilter.m */; };
+		2DAB570116FB6278009F9CF2 /* JSONRPCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56F916FB6277009F9CF2 /* JSONRPCRequest.m */; };
+		2DAB570216FB6278009F9CF2 /* JSONRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56FB16FB6278009F9CF2 /* JSONRPCResponse.m */; };
+		2DAB574E16FB6498009F9CF2 /* baumkuchenTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DAB574D16FB6498009F9CF2 /* baumkuchenTests-Info.plist */; };
+		2DAB575616FB6509009F9CF2 /* baumkuchenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB575316FB6509009F9CF2 /* baumkuchenTests.m */; };
+		2DAB575716FB6509009F9CF2 /* DSSQLiteEngineTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB575516FB6509009F9CF2 /* DSSQLiteEngineTest.m */; };
+		2DAB575A16FB651F009F9CF2 /* TestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB575916FB651F009F9CF2 /* TestEntity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,32 +67,8 @@
 		2D68B9CC16F23FFD000E9AA3 /* baumkuchen-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "baumkuchen-Prefix.pch"; sourceTree = "<group>"; };
 		2D68B9D616F23FFD000E9AA3 /* baumkuchenTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = baumkuchenTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D68B9D716F23FFD000E9AA3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		2D68B9E116F23FFD000E9AA3 /* baumkuchenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "baumkuchenTests-Info.plist"; sourceTree = "<group>"; };
-		2D68B9E316F23FFD000E9AA3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2D68B9E516F23FFD000E9AA3 /* baumkuchenTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = baumkuchenTests.h; sourceTree = "<group>"; };
-		2D68B9E616F23FFD000E9AA3 /* baumkuchenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = baumkuchenTests.m; sourceTree = "<group>"; };
 		2D68BA0216F243D4000E9AA3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
-		2D68BA0D16F244B6000E9AA3 /* baumkuchen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = baumkuchen.h; path = src/baumkuchen.h; sourceTree = SOURCE_ROOT; };
-		2D68BA0E16F244B6000E9AA3 /* baumkuchen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = baumkuchen.m; path = src/baumkuchen.m; sourceTree = SOURCE_ROOT; };
-		2D68BA0F16F244B6000E9AA3 /* DSEngineSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSEngineSQLite.h; path = src/DSEngineSQLite.h; sourceTree = SOURCE_ROOT; };
-		2D68BA1016F244B6000E9AA3 /* DSEngineSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSEngineSQLite.m; path = src/DSEngineSQLite.m; sourceTree = SOURCE_ROOT; };
-		2D68BA1116F244B6000E9AA3 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Entity.h; path = src/Entity.h; sourceTree = SOURCE_ROOT; };
-		2D68BA1216F244B6000E9AA3 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Entity.m; path = src/Entity.m; sourceTree = SOURCE_ROOT; };
-		2D68BA1316F244B6000E9AA3 /* Gateway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gateway.h; path = src/Gateway.h; sourceTree = SOURCE_ROOT; };
-		2D68BA1416F244B6000E9AA3 /* Gateway.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gateway.m; path = src/Gateway.m; sourceTree = SOURCE_ROOT; };
-		2D68BA1516F244B6000E9AA3 /* GatewayCallHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GatewayCallHandler.h; path = src/GatewayCallHandler.h; sourceTree = SOURCE_ROOT; };
-		2D68BA1616F244B6000E9AA3 /* GatewayCallHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GatewayCallHandler.m; path = src/GatewayCallHandler.m; sourceTree = SOURCE_ROOT; };
-		2D68BA1716F244B6000E9AA3 /* JSONRPCRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONRPCRequest.h; path = src/JSONRPCRequest.h; sourceTree = SOURCE_ROOT; };
-		2D68BA1816F244B6000E9AA3 /* JSONRPCRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONRPCRequest.m; path = src/JSONRPCRequest.m; sourceTree = SOURCE_ROOT; };
-		2D68BA1916F244B6000E9AA3 /* JSONRPCResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONRPCResponse.h; path = src/JSONRPCResponse.h; sourceTree = SOURCE_ROOT; };
-		2D68BA1A16F244B6000E9AA3 /* JSONRPCResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONRPCResponse.m; path = src/JSONRPCResponse.m; sourceTree = SOURCE_ROOT; };
-		2D68BA1B16F244B6000E9AA3 /* GatewayOutputFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GatewayOutputFilter.h; path = src/GatewayOutputFilter.h; sourceTree = SOURCE_ROOT; };
-		2D68BA1C16F244B6000E9AA3 /* GatewayOutputFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GatewayOutputFilter.m; path = src/GatewayOutputFilter.m; sourceTree = SOURCE_ROOT; };
-		2D68BA1D16F244B6000E9AA3 /* Validator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Validator.h; path = src/Validator.h; sourceTree = SOURCE_ROOT; };
-		2D68BA2616F244C4000E9AA3 /* Validator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Validator.m; path = src/Validator.m; sourceTree = SOURCE_ROOT; };
 		2D68BA2816F59C81000E9AA3 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		2D68BA5516F5A130000E9AA3 /* DSSQLiteEngineTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSSQLiteEngineTest.h; sourceTree = "<group>"; };
-		2D68BA5616F5A130000E9AA3 /* DSSQLiteEngineTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSSQLiteEngineTest.m; sourceTree = "<group>"; };
 		2D68BA9616F5AA16000E9AA3 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = ../../../git/clone/fmdb/src/FMDatabase.h; sourceTree = "<group>"; };
 		2D68BA9716F5AA16000E9AA3 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = ../../../git/clone/fmdb/src/FMDatabase.m; sourceTree = "<group>"; };
 		2D68BA9816F5AA16000E9AA3 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = ../../../git/clone/fmdb/src/FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -104,8 +80,6 @@
 		2D68BA9E16F5AA16000E9AA3 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = ../../../git/clone/fmdb/src/FMResultSet.h; sourceTree = "<group>"; };
 		2D68BA9F16F5AA16000E9AA3 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = ../../../git/clone/fmdb/src/FMResultSet.m; sourceTree = "<group>"; };
 		2D68BABD16F5B753000E9AA3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		2D68BAC316F5BD09000E9AA3 /* TestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestEntity.h; sourceTree = "<group>"; };
-		2D68BAC416F5BD09000E9AA3 /* TestEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestEntity.m; sourceTree = "<group>"; };
 		2D68BAC816F5C1D0000E9AA3 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
 		2D68BAC916F5C1D0000E9AA3 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
 		2D68BAD016F8C984000E9AA3 /* DSEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSEngine.h; sourceTree = "<group>"; };
@@ -113,6 +87,31 @@
 		2DAB56E316F8DA72009F9CF2 /* JSONRPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPC.m; sourceTree = "<group>"; };
 		2DAB56E516F8DD45009F9CF2 /* JSONRPCError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCError.h; sourceTree = "<group>"; };
 		2DAB56E616F8DD45009F9CF2 /* JSONRPCError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCError.m; sourceTree = "<group>"; };
+		2DAB56E816FB6190009F9CF2 /* baumkuchen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baumkuchen.h; sourceTree = "<group>"; };
+		2DAB56E916FB6190009F9CF2 /* baumkuchen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baumkuchen.m; sourceTree = "<group>"; };
+		2DAB56EB16FB6248009F9CF2 /* Validator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Validator.h; sourceTree = "<group>"; };
+		2DAB56EC16FB6248009F9CF2 /* Validator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Validator.m; sourceTree = "<group>"; };
+		2DAB56EE16FB6277009F9CF2 /* DSEngineSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSEngineSQLite.h; sourceTree = "<group>"; };
+		2DAB56EF16FB6277009F9CF2 /* DSEngineSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSEngineSQLite.m; sourceTree = "<group>"; };
+		2DAB56F016FB6277009F9CF2 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		2DAB56F116FB6277009F9CF2 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
+		2DAB56F216FB6277009F9CF2 /* Gateway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gateway.h; sourceTree = "<group>"; };
+		2DAB56F316FB6277009F9CF2 /* Gateway.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gateway.m; sourceTree = "<group>"; };
+		2DAB56F416FB6277009F9CF2 /* GatewayCallHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GatewayCallHandler.h; sourceTree = "<group>"; };
+		2DAB56F516FB6277009F9CF2 /* GatewayCallHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GatewayCallHandler.m; sourceTree = "<group>"; };
+		2DAB56F616FB6277009F9CF2 /* GatewayOutputFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GatewayOutputFilter.h; sourceTree = "<group>"; };
+		2DAB56F716FB6277009F9CF2 /* GatewayOutputFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GatewayOutputFilter.m; sourceTree = "<group>"; };
+		2DAB56F816FB6277009F9CF2 /* JSONRPCRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCRequest.h; sourceTree = "<group>"; };
+		2DAB56F916FB6277009F9CF2 /* JSONRPCRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCRequest.m; sourceTree = "<group>"; };
+		2DAB56FA16FB6278009F9CF2 /* JSONRPCResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCResponse.h; sourceTree = "<group>"; };
+		2DAB56FB16FB6278009F9CF2 /* JSONRPCResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCResponse.m; sourceTree = "<group>"; };
+		2DAB574D16FB6498009F9CF2 /* baumkuchenTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "baumkuchenTests-Info.plist"; sourceTree = "<group>"; };
+		2DAB575216FB6509009F9CF2 /* baumkuchenTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baumkuchenTests.h; sourceTree = "<group>"; };
+		2DAB575316FB6509009F9CF2 /* baumkuchenTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baumkuchenTests.m; sourceTree = "<group>"; };
+		2DAB575416FB6509009F9CF2 /* DSSQLiteEngineTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSSQLiteEngineTest.h; sourceTree = "<group>"; };
+		2DAB575516FB6509009F9CF2 /* DSSQLiteEngineTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSSQLiteEngineTest.m; sourceTree = "<group>"; };
+		2DAB575816FB651F009F9CF2 /* TestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestEntity.h; sourceTree = "<group>"; };
+		2DAB575916FB651F009F9CF2 /* TestEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestEntity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,8 +174,8 @@
 		2D68B9CA16F23FFD000E9AA3 /* baumkuchen */ = {
 			isa = PBXGroup;
 			children = (
-				2D68BA0D16F244B6000E9AA3 /* baumkuchen.h */,
-				2D68BA0E16F244B6000E9AA3 /* baumkuchen.m */,
+				2DAB56E816FB6190009F9CF2 /* baumkuchen.h */,
+				2DAB56E916FB6190009F9CF2 /* baumkuchen.m */,
 				2D68B9F316F242F0000E9AA3 /* Gateway */,
 				2D68B9F216F242E6000E9AA3 /* DataSource */,
 				2D68B9F116F242DF000E9AA3 /* Model */,
@@ -198,10 +197,11 @@
 		2D68B9DF16F23FFD000E9AA3 /* baumkuchenTests */ = {
 			isa = PBXGroup;
 			children = (
+				2DAB575216FB6509009F9CF2 /* baumkuchenTests.h */,
+				2DAB575316FB6509009F9CF2 /* baumkuchenTests.m */,
+				2DAB574D16FB6498009F9CF2 /* baumkuchenTests-Info.plist */,
 				2D68BAC216F5BCEB000E9AA3 /* Model */,
 				2D68BA5416F5A115000E9AA3 /* DataSource */,
-				2D68B9E516F23FFD000E9AA3 /* baumkuchenTests.h */,
-				2D68B9E616F23FFD000E9AA3 /* baumkuchenTests.m */,
 				2D68B9E016F23FFD000E9AA3 /* Supporting Files */,
 			);
 			path = baumkuchenTests;
@@ -210,8 +210,6 @@
 		2D68B9E016F23FFD000E9AA3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2D68B9E116F23FFD000E9AA3 /* baumkuchenTests-Info.plist */,
-				2D68B9E216F23FFD000E9AA3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -219,9 +217,13 @@
 		2D68B9F016F242D2000E9AA3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2DAB56F816FB6277009F9CF2 /* JSONRPCRequest.h */,
+				2DAB56F916FB6277009F9CF2 /* JSONRPCRequest.m */,
+				2DAB56FA16FB6278009F9CF2 /* JSONRPCResponse.h */,
+				2DAB56FB16FB6278009F9CF2 /* JSONRPCResponse.m */,
 				2DAB56E016F8D828009F9CF2 /* JSONRPC */,
-				2D68BA2616F244C4000E9AA3 /* Validator.m */,
-				2D68BA1D16F244B6000E9AA3 /* Validator.h */,
+				2DAB56EB16FB6248009F9CF2 /* Validator.h */,
+				2DAB56EC16FB6248009F9CF2 /* Validator.m */,
 				2DAB56E216F8DA72009F9CF2 /* JSONRPC.h */,
 				2DAB56E316F8DA72009F9CF2 /* JSONRPC.m */,
 			);
@@ -231,8 +233,8 @@
 		2D68B9F116F242DF000E9AA3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2D68BA1116F244B6000E9AA3 /* Entity.h */,
-				2D68BA1216F244B6000E9AA3 /* Entity.m */,
+				2DAB56F016FB6277009F9CF2 /* Entity.h */,
+				2DAB56F116FB6277009F9CF2 /* Entity.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -251,12 +253,12 @@
 		2D68B9F316F242F0000E9AA3 /* Gateway */ = {
 			isa = PBXGroup;
 			children = (
-				2D68BA1316F244B6000E9AA3 /* Gateway.h */,
-				2D68BA1416F244B6000E9AA3 /* Gateway.m */,
-				2D68BA1516F244B6000E9AA3 /* GatewayCallHandler.h */,
-				2D68BA1616F244B6000E9AA3 /* GatewayCallHandler.m */,
-				2D68BA1B16F244B6000E9AA3 /* GatewayOutputFilter.h */,
-				2D68BA1C16F244B6000E9AA3 /* GatewayOutputFilter.m */,
+				2DAB56F216FB6277009F9CF2 /* Gateway.h */,
+				2DAB56F316FB6277009F9CF2 /* Gateway.m */,
+				2DAB56F416FB6277009F9CF2 /* GatewayCallHandler.h */,
+				2DAB56F516FB6277009F9CF2 /* GatewayCallHandler.m */,
+				2DAB56F616FB6277009F9CF2 /* GatewayOutputFilter.h */,
+				2DAB56F716FB6277009F9CF2 /* GatewayOutputFilter.m */,
 			);
 			name = Gateway;
 			sourceTree = "<group>";
@@ -264,8 +266,8 @@
 		2D68BA5416F5A115000E9AA3 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
-				2D68BA5516F5A130000E9AA3 /* DSSQLiteEngineTest.h */,
-				2D68BA5616F5A130000E9AA3 /* DSSQLiteEngineTest.m */,
+				2DAB575416FB6509009F9CF2 /* DSSQLiteEngineTest.h */,
+				2DAB575516FB6509009F9CF2 /* DSSQLiteEngineTest.m */,
 			);
 			name = DataSource;
 			sourceTree = "<group>";
@@ -298,8 +300,8 @@
 		2D68BAC216F5BCEB000E9AA3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2D68BAC316F5BD09000E9AA3 /* TestEntity.h */,
-				2D68BAC416F5BD09000E9AA3 /* TestEntity.m */,
+				2DAB575816FB651F009F9CF2 /* TestEntity.h */,
+				2DAB575916FB651F009F9CF2 /* TestEntity.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -307,8 +309,8 @@
 		2D68BAD416F8D2C7000E9AA3 /* Engine */ = {
 			isa = PBXGroup;
 			children = (
-				2D68BA0F16F244B6000E9AA3 /* DSEngineSQLite.h */,
-				2D68BA1016F244B6000E9AA3 /* DSEngineSQLite.m */,
+				2DAB56EE16FB6277009F9CF2 /* DSEngineSQLite.h */,
+				2DAB56EF16FB6277009F9CF2 /* DSEngineSQLite.m */,
 			);
 			name = Engine;
 			sourceTree = "<group>";
@@ -316,10 +318,6 @@
 		2DAB56E016F8D828009F9CF2 /* JSONRPC */ = {
 			isa = PBXGroup;
 			children = (
-				2D68BA1716F244B6000E9AA3 /* JSONRPCRequest.h */,
-				2D68BA1816F244B6000E9AA3 /* JSONRPCRequest.m */,
-				2D68BA1916F244B6000E9AA3 /* JSONRPCResponse.h */,
-				2D68BA1A16F244B6000E9AA3 /* JSONRPCResponse.m */,
 				2DAB56E516F8DD45009F9CF2 /* JSONRPCError.h */,
 				2DAB56E616F8DD45009F9CF2 /* JSONRPCError.m */,
 				2124127B16FAD60C008E257D /* JSONRPCComponent.h */,
@@ -398,7 +396,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D68B9E416F23FFD000E9AA3 /* InfoPlist.strings in Resources */,
+				2DAB574E16FB6498009F9CF2 /* baumkuchenTests-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,15 +423,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D68BAB416F5B6A8000E9AA3 /* baumkuchen.m in Sources */,
-				2D68BAB516F5B6A8000E9AA3 /* Gateway.m in Sources */,
-				2D68BAB616F5B6A8000E9AA3 /* GatewayCallHandler.m in Sources */,
-				2D68BAB716F5B6A8000E9AA3 /* JSONRPCRequest.m in Sources */,
-				2D68BAB816F5B6A8000E9AA3 /* JSONRPCResponse.m in Sources */,
-				2D68BAB916F5B6A8000E9AA3 /* GatewayOutputFilter.m in Sources */,
-				2D68BABA16F5B6A8000E9AA3 /* DSEngineSQLite.m in Sources */,
-				2D68BABB16F5B6A8000E9AA3 /* Entity.m in Sources */,
-				2D68BABC16F5B6A8000E9AA3 /* Validator.m in Sources */,
 				2D68BAAF16F5B693000E9AA3 /* FMDatabase.m in Sources */,
 				2D68BAB016F5B693000E9AA3 /* FMDatabaseAdditions.m in Sources */,
 				2D68BAB116F5B693000E9AA3 /* FMDatabasePool.m in Sources */,
@@ -442,6 +431,15 @@
 				2D68BACA16F5C1D0000E9AA3 /* DataSource.m in Sources */,
 				2DAB56E416F8DA72009F9CF2 /* JSONRPC.m in Sources */,
 				2DAB56E716F8DD45009F9CF2 /* JSONRPCError.m in Sources */,
+				2DAB56EA16FB6191009F9CF2 /* baumkuchen.m in Sources */,
+				2DAB56ED16FB6248009F9CF2 /* Validator.m in Sources */,
+				2DAB56FC16FB6278009F9CF2 /* DSEngineSQLite.m in Sources */,
+				2DAB56FD16FB6278009F9CF2 /* Entity.m in Sources */,
+				2DAB56FE16FB6278009F9CF2 /* Gateway.m in Sources */,
+				2DAB56FF16FB6278009F9CF2 /* GatewayCallHandler.m in Sources */,
+				2DAB570016FB6278009F9CF2 /* GatewayOutputFilter.m in Sources */,
+				2DAB570116FB6278009F9CF2 /* JSONRPCRequest.m in Sources */,
+				2DAB570216FB6278009F9CF2 /* JSONRPCResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,9 +447,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D68B9E716F23FFD000E9AA3 /* baumkuchenTests.m in Sources */,
-				2D68BA5716F5A130000E9AA3 /* DSSQLiteEngineTest.m in Sources */,
-				2D68BAC516F5BD09000E9AA3 /* TestEntity.m in Sources */,
+				2DAB575616FB6509009F9CF2 /* baumkuchenTests.m in Sources */,
+				2DAB575716FB6509009F9CF2 /* DSSQLiteEngineTest.m in Sources */,
+				2DAB575A16FB651F009F9CF2 /* TestEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,17 +462,6 @@
 			targetProxy = 2D68BAC016F5BB09000E9AA3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		2D68B9E216F23FFD000E9AA3 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D68B9E316F23FFD000E9AA3 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2D68B9E816F23FFD000E9AA3 /* Debug */ = {

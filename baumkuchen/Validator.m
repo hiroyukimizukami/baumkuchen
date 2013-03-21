@@ -8,7 +8,7 @@
 
 #import "Validator.h"
 
-@interface Validator
+@interface Validator()
 
 -(BOOL) does:(NSArray*) input AsArrayMatchWith:(NSArray*) expected;
 -(BOOL) does:(NSDictionary*) input AsyDictionaryMatchWith:(NSDictionary*) expected;
