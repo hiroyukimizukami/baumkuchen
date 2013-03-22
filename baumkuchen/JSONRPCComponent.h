@@ -10,6 +10,6 @@
 
 @protocol JSONRPCComponent <NSObject>
 
--(BOOL) validate:(NSDictionary*) params;
+-(BOOL) validate:(NSString*)method AndParams:(NSDictionary*)params;
 
 @end

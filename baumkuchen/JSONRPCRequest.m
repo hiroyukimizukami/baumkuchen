@@ -14,6 +14,7 @@
 {
     if (self == [super init]) {
         self.jsonrpcId = jsonrpcId;
+        self.jsonrpc = @"2.0";
         self.method = method;
         self.params = params;
     }
@@ -25,6 +26,7 @@
 {
     if (self == [super init]) {
         self.method = method;
+        self.jsonrpc = @"2.0";        
         self.params = params;
     }
     

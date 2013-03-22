@@ -48,8 +48,7 @@
     #pragma clang diagnostic push
     #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
 
-    SEL validator = NSSelectorFromString(@"validate");
-    if (![[self component] performSelector:validator withObject:methodName withObject:params]) {
+    if (![[self component] validate:methodName AndParams:params]) {
         JSONRPCErrorInvalidParams* error = [[JSONRPCErrorInvalidParams alloc] init];
         JSONRPCResponse* response = [[JSONRPCResponse alloc] initWithError:error AndId:jsonrpcId];
         

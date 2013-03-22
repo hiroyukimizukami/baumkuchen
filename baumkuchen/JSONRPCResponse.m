@@ -14,6 +14,7 @@
 {
     if (self == [super init]) {
         self.jsonrpcId = jsonrpcId;
+        self.jsonrpc = @"2.0";
         self.error = error;
     }
     
@@ -24,6 +25,7 @@
 {
     if (self == [super init]) {
         self.jsonrpcId = jsonrpcId;
+        self.jsonrpc = @"2.0";
         self.result = result;
     }
     
@@ -33,6 +35,7 @@
 -(id) initWithErrorForNotification:(id<JSONRPCError>)error
 {
     if (self == [super init]) {
+        self.jsonrpc = @"2.0";
         self.error = error;
     }
     
@@ -43,6 +46,7 @@
 {
     if (self == [super init]) {
         self.result = result;
+        self.jsonrpc = @"2.0";
     }
     
     return self;
