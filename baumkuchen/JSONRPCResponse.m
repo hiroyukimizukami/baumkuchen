@@ -7,6 +7,7 @@
 //
 
 #import "JSONRPCResponse.h"
+#import "SBJson.h"
 
 @implementation JSONRPCResponse
 
@@ -53,8 +54,21 @@
     
 }
 
+-(id) initWithJSON:(NSString *)json
+{
+    id arrayOrDict = [[SBJsonParser new] objectWithString:json];
+    if ([arrayOrDict isKindOfClass:[NSArray class]]) {
+        [NSException raise:@"InvalidArgumentException" format:@"Invalid json format."];
+    }
 
--(NSDictionary*) build
+    //TODO impl
+    return self;
+
+}
+
+
+
+-(NSDictionary*) toDictionary
 {
     NSMutableDictionary* response = [NSMutableDictionary dictionary];
     [response setObject:@"2.0" forKey:@"jsonrpc"];
@@ -74,5 +88,12 @@
     return response;
     
 }
+
+-(NSString*) toJSON
+{
+    NSDictionary* me = [self toDictionary];
+    return [[SBJsonWriter new] stringWithObject:me];
+}
+
 
 @end

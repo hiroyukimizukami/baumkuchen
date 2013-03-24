@@ -17,6 +17,8 @@
 
 -(id) initWithParams:(NSDictionary*)params AndId:(NSString*) jsonrpcId AndMethod:(NSString*)method;
 -(id) initWithParamsForNotification:(NSDictionary*)params AndMethod:(NSString*)method;
--(NSDictionary*) build;
+-(id) initWithJSON:(NSString*) json;
+-(NSDictionary*) toDictionary;
+-(NSString*) toJSON;
 
 @end

@@ -12,17 +12,19 @@
 
 -(BOOL) validate:(NSString*)method AndParams:(NSDictionary *)params
 {
+    if ([params objectForKey:@"failure"] != Nil) {
+        return FALSE;
+    }
     return TRUE;
 }
 
--(NSDictionary*) lookupWithoutParams
+-(NSArray*) lookup:(NSDictionary*)params
 {
-    return [NSDictionary dictionaryWithObject:@"v" forKey:@"result"];
-}
-
--(NSDictionary*) lookupWithParams:(NSDictionary*)params
-{
-    return [NSDictionary dictionaryWithObject:params forKey:@"result"];
+    if ([params objectForKey:@"error"]) {
+        NSException* e = [NSException exceptionWithName:@"test" reason:@"you needed" userInfo:[NSDictionary dictionary]];
+        [e raise];
+    }
+    return [NSArray arrayWithObject:[NSDictionary dictionaryWithObject:params forKey:@"result"]];
 }
 
 

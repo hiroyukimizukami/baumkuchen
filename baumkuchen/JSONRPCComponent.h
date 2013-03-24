@@ -12,4 +12,7 @@
 
 -(BOOL) validate:(NSString*)method AndParams:(NSDictionary*)params;
 
+//Methods of a class to impl this protocol must have folloing signature.
+//input -> NSDictionary*, output -> NSArray*
+
 @end

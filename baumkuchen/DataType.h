@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Validator : NSObject
+@interface DataType : NSObject
 
 @property (nonatomic, retain) NSDictionary* format;
 
--(id) initWithFormat:(NSDictionary*) expectedFormat;
--(BOOL) validate:(NSDictionary*) input;
+-(void) require:(NSString*)key ToBe:(DataType*)type;
+-(void) optional:(NSString*)key ToBe:(DataType*)type;
+
+-(BOOL) validate:(NSDictionary*)params;
 
 @end

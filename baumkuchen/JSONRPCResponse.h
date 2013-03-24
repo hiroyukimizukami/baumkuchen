@@ -20,7 +20,9 @@
 -(id) initWithResult:(NSArray*) result AndId:(NSString*) jsonrpcId;
 -(id) initWithErrorForNotification:(id<JSONRPCError>) error;
 -(id) initWithResultForNotification:(NSArray*) result;
+-(id) initWithJSON:(NSString*) json;
 
--(NSDictionary*) build;
+-(NSDictionary*) toDictionary;
+-(NSString*) toJSON;
 
 @end

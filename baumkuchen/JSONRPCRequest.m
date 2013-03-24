@@ -7,6 +7,7 @@
 //
 
 #import "JSONRPCRequest.h"
+#import "SBJson.h"
 
 @implementation JSONRPCRequest
 
@@ -33,7 +34,26 @@
     return self;
 }
 
--(NSDictionary*) build
+-(id) initWithJSON:(NSString *)json
+{
+    id arrayOrDict = [[SBJsonParser new] objectWithString:json];
+    if ([arrayOrDict isKindOfClass:[NSArray class]]) {
+        [NSException raise:@"InvalidArgumentException" format:@"Invalid json format."];
+    }
+    NSDictionary* params = arrayOrDict;
+    if (self == [super init]) {
+        self.method = [params objectForKey:@"method"];
+        self.jsonrpc = @"2.0";
+        self.params = [params objectForKey:@"params"];
+        if ([params objectForKey:@"id"] != Nil) {
+            self.jsonrpcId = [params objectForKey:@"id"];
+        }
+    }
+
+    return self;
+}
+
+-(NSDictionary*) toDictionary
 {
     NSDictionary* params = [self params];
     if (params == Nil) {
@@ -51,6 +71,12 @@
     }
     
     return request;
+}
+
+-(NSString*) toJSON
+{
+    NSDictionary* me = [self toDictionary];
+    return [[SBJsonWriter new] stringWithObject:me];
 }
 
 @end

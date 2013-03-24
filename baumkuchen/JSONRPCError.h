@@ -16,5 +16,6 @@
 
 -(id) init;
 -(id) initWithData:(NSArray*) dataArray;
+-(id) initWithJSON:(NSString*) json;
 
 @end

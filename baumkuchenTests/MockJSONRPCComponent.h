@@ -11,7 +11,6 @@
 
 @interface MockJSONRPCComponent : NSObject<JSONRPCComponent>
 
--(NSDictionary*) lookupWithoutParams;
--(NSDictionary*) lookupWithParams:(NSDictionary*)params;
+-(NSDictionary*) lookup:(NSDictionary*)params;
 
 @end

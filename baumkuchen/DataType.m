@@ -6,16 +6,16 @@
 //  Copyright (c) 2013 hiroyuki.mizukami. All rights reserved.
 //
 
-#import "Validator.h"
+#import "DataType.h"
 
-@interface Validator()
+@interface DataType()
 
 -(BOOL) does:(NSArray*) input AsArrayMatchWith:(NSArray*) expected;
 -(BOOL) does:(NSDictionary*) input AsyDictionaryMatchWith:(NSDictionary*) expected;
 
 @end
 
-@implementation Validator
+@implementation DataType
 
 -(id) initWithFormat:(NSDictionary *)expectedFormat
 {
