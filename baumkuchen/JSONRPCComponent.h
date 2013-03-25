@@ -1,18 +1,19 @@
 //
-//  JSONRPCComponent.h
+//  JSONRPC.h
 //  baumkuchen
 //
-//  Created by hiroyuki.mizukami on 3/21/13.
+//  Created by hiroyuki.mizukami on 3/26/13.
 //  Copyright (c) 2013 hiroyuki.mizukami. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import "JSONRPCRequest.h"
+#import "JSONRPCResponse.h"
 
 @protocol JSONRPCComponent <NSObject>
 
--(BOOL) validate:(NSString*)method AndParams:(NSDictionary*)params;
-
-//Methods of a class to impl this protocol must have folloing signature.
-//input -> NSDictionary*, output -> NSArray*
+-(JSONRPCResponse*) call:(JSONRPCRequest*) request;
+-(JSONRPCResponse*) notify:(JSONRPCRequest*) request;
+-(NSArray*) batch:(NSArray*) requests;
 
 @end

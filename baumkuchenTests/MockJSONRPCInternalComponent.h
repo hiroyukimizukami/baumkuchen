@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JSONRPCComponent.h"
+#import "JSONRPCInternalComponent.h"
 
-@interface MockJSONRPCComponent : NSObject<JSONRPCComponent>
+@interface MockJSONRPCInternalComponent : NSObject<JSONRPCInternalComponent>
 
 -(NSDictionary*) lookup:(NSDictionary*)params;
 

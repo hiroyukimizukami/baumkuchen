@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 hiroyuki.mizukami. All rights reserved.
 //
 
-#import "MockJSONRPCComponent.h"
+#import "MockJSONRPCInternalComponent.h"
 
-@implementation MockJSONRPCComponent
+@implementation MockJSONRPCInternalComponent
 
 -(BOOL) validate:(NSString*)method AndParams:(NSDictionary *)params
 {

@@ -60,13 +60,23 @@
     if ([arrayOrDict isKindOfClass:[NSArray class]]) {
         [NSException raise:@"InvalidArgumentException" format:@"Invalid json format."];
     }
+    
+    NSDictionary* response = arrayOrDict;
+    if (self == [super init]) {
+        if ([response objectForKey:@"jsonrpcId"] != Nil) {
+            self.jsonrpcId = [response objectForKey:@"jsonrpcId"];
+        }
+        self.jsonrpc = @"2.0";
+        if ([response objectForKey:@"result"]) {
+            self.result = [response objectForKey:@"result"];
+        }
+        if ([response objectForKey:@"error"]) {
+            self.error = [response objectForKey:@"error"];
+        }
+    }
 
-    //TODO impl
     return self;
-
 }
-
-
 
 -(NSDictionary*) toDictionary
 {
