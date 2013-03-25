@@ -19,15 +19,20 @@
 -(void) testUseOk
 {
     MockJSONRPCInternalComponent* mockComponent = [[MockJSONRPCInternalComponent alloc] init];
-    JSONRPCInternal* jsonrpc;
-    STAssertNoThrow(jsonrpc = [[JSONRPCInternal alloc] initWithComponent:mockComponent], @"use ok");
+    JSONRPCInternal* internal;
+    STAssertNoThrow(internal = [[JSONRPCInternal alloc] initWithComponent:mockComponent], @" use internal ok");
+    
+    JSONRPC* jsonrpc;
+    STAssertNoThrow(jsonrpc = [[JSONRPC alloc] initWithComponent:internal], @" use jsonrpc ok");
+    
     jsonrpc = Nil;
 }
 
 -(void) testCallOk
 {
     MockJSONRPCInternalComponent* mockComponent = [[MockJSONRPCInternalComponent alloc] init];
-    JSONRPCInternal* jsonrpc = [[JSONRPCInternal alloc] initWithComponent:mockComponent];
+    JSONRPCInternal* internal = [[JSONRPCInternal alloc] initWithComponent:mockComponent];
+    JSONRPC* jsonrpc = [[JSONRPC alloc] initWithComponent:internal];
     
     NSDictionary* param = [NSDictionary dictionaryWithObject:@"hoge" forKey:@"key"];
     JSONRPCRequest* request = [[JSONRPCRequest alloc] initWithParams:param AndId:@"0" AndMethod:@"lookup"];
@@ -49,7 +54,9 @@
 -(void) testErrorMethodNotFound
 {
     MockJSONRPCInternalComponent* mockComponent = [[MockJSONRPCInternalComponent alloc] init];
-    JSONRPCInternal* jsonrpc = [[JSONRPCInternal alloc] initWithComponent:mockComponent];
+    JSONRPCInternal* internal = [[JSONRPCInternal alloc] initWithComponent:mockComponent];
+    JSONRPC* jsonrpc = [[JSONRPC alloc] initWithComponent:internal];
+
     
     NSDictionary* param = [NSDictionary dictionaryWithObject:@"hoge" forKey:@"key"];
     JSONRPCRequest* request = [[JSONRPCRequest alloc] initWithParams:param AndId:@"0" AndMethod:@"hoge"];
@@ -69,7 +76,9 @@
 -(void) testErrorInvalidParams
 {
     MockJSONRPCInternalComponent* mockComponent = [[MockJSONRPCInternalComponent alloc] init];
-    JSONRPCInternal* jsonrpc = [[JSONRPCInternal alloc] initWithComponent:mockComponent];
+    JSONRPCInternal* internal = [[JSONRPCInternal alloc] initWithComponent:mockComponent];
+    JSONRPC* jsonrpc = [[JSONRPC alloc] initWithComponent:internal];
+
     
     NSDictionary* param = [NSDictionary dictionaryWithObject:@"hoge" forKey:@"failure"];
     JSONRPCRequest* request = [[JSONRPCRequest alloc] initWithParams:param AndId:@"0" AndMethod:@"lookup"];
@@ -89,7 +98,9 @@
 -(void) testErrorInternalError
 {
     MockJSONRPCInternalComponent* mockComponent = [[MockJSONRPCInternalComponent alloc] init];
-    JSONRPCInternal* jsonrpc = [[JSONRPCInternal alloc] initWithComponent:mockComponent];
+    JSONRPCInternal* internal = [[JSONRPCInternal alloc] initWithComponent:mockComponent];
+    JSONRPC* jsonrpc = [[JSONRPC alloc] initWithComponent:internal];
+
     
     NSDictionary* param = [NSDictionary dictionaryWithObject:@"hoge" forKey:@"error"];
     JSONRPCRequest* request = [[JSONRPCRequest alloc] initWithParams:param AndId:@"0" AndMethod:@"lookup"];

@@ -11,7 +11,7 @@
 
 @interface JSONRPC : NSObject
 
--(id) initWithCompopnent:(id<JSONRPCComponent>)component;
+-(id) initWithComponent:(id<JSONRPCComponent>)component;
 -(JSONRPCResponse*) call:(JSONRPCRequest*) request;
 -(JSONRPCResponse*) notify:(JSONRPCRequest*) request;
 -(NSArray*) batch:(NSArray*) requests;

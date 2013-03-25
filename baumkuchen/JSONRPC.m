@@ -17,7 +17,7 @@
 
 @implementation JSONRPC
 
--(id) initWithCompopnent:(id<JSONRPCComponent>)component
+-(id) initWithComponent:(id<JSONRPCComponent>)component
 {
     if (self == [super init]) {
         self.component = component;
