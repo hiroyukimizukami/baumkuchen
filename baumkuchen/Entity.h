@@ -1,14 +1,14 @@
 //
 //  Entity.h
-//  CyuniGenerator
+//  baumkuchen
 //
-//  Created by hiroyuki.mizukami on 3/12/13.
+//  Created by hiroyuki.mizukami on 3/27/13.
 //  Copyright (c) 2013 hiroyuki.mizukami. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface Entity : NSObject
+@protocol Entity <NSObject>
 
 @property (nonatomic, retain) NSNumber* primary;
 @property (nonatomic, retain) NSNumber* createdAt;

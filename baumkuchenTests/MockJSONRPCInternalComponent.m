@@ -21,8 +21,7 @@
 -(NSArray*) lookup:(NSDictionary*)params
 {
     if ([params objectForKey:@"error"]) {
-        NSException* e = [NSException exceptionWithName:@"test" reason:@"you needed" userInfo:[NSDictionary dictionary]];
-        [e raise];
+        [NSException raise:@"UncaughtedException" format:@"An exception occurs"];
     }
     return [NSArray arrayWithObject:[NSDictionary dictionaryWithObject:params forKey:@"result"]];
 }
