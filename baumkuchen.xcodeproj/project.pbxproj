@@ -14,6 +14,7 @@
 		2D56CC9B17021689006E679A /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D56CC9A17021689006E679A /* Repository.m */; };
 		2D56CC9F1702180A006E679A /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D56CC9E1702180A006E679A /* Factory.m */; };
 		2D56CCA21709E98F006E679A /* MockJSONRPCInternalComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB576F16FCB592009F9CF2 /* MockJSONRPCInternalComponent.m */; };
+		2D56CD2D1709FD67006E679A /* DSEngineSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D56CD2C1709FD67006E679A /* DSEngineSQLite.m */; };
 		2D5B140516FEE8D100E47C81 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5B13F216FEE8D100E47C81 /* SBJsonParser.m */; };
 		2D5B140616FEE8D100E47C81 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5B13F416FEE8D100E47C81 /* SBJsonStreamParser.m */; };
 		2D5B140716FEE8D100E47C81 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5B13F616FEE8D100E47C81 /* SBJsonStreamParserAccumulator.m */; };
@@ -40,7 +41,6 @@
 		2D68BACA16F5C1D0000E9AA3 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D68BAC916F5C1D0000E9AA3 /* DataSource.m */; };
 		2DAB56E416F8DA72009F9CF2 /* JSONRPCInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56E316F8DA72009F9CF2 /* JSONRPCInternal.m */; };
 		2DAB56EA16FB6191009F9CF2 /* baumkuchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56E916FB6190009F9CF2 /* baumkuchen.m */; };
-		2DAB56FC16FB6278009F9CF2 /* DSComponentSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56EF16FB6277009F9CF2 /* DSComponentSQLite.m */; };
 		2DAB570116FB6278009F9CF2 /* JSONRPCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56F916FB6277009F9CF2 /* JSONRPCRequest.m */; };
 		2DAB570216FB6278009F9CF2 /* JSONRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56FB16FB6278009F9CF2 /* JSONRPCResponse.m */; };
 		2DAB574E16FB6498009F9CF2 /* baumkuchenTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DAB574D16FB6498009F9CF2 /* baumkuchenTests-Info.plist */; };
@@ -95,6 +95,9 @@
 		2D56CCA01702189E006E679A /* RepositoryComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoryComponent.h; sourceTree = "<group>"; };
 		2D56CCA117021925006E679A /* FactoryComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactoryComponent.h; sourceTree = "<group>"; };
 		2D56CD281709F713006E679A /* DomainData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DomainData.h; sourceTree = "<group>"; };
+		2D56CD2B1709FD67006E679A /* DSEngineSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSEngineSQLite.h; sourceTree = "<group>"; };
+		2D56CD2C1709FD67006E679A /* DSEngineSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSEngineSQLite.m; sourceTree = "<group>"; };
+		2D56CD2E1709FD7C006E679A /* DSEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSEngine.h; sourceTree = "<group>"; };
 		2D5B13F016FEE8D100E47C81 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJson.h; path = "../../../git/clone/json-framework/src/main/objc/SBJson.h"; sourceTree = "<group>"; };
 		2D5B13F116FEE8D100E47C81 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = "../../../git/clone/json-framework/src/main/objc/SBJsonParser.h"; sourceTree = "<group>"; };
 		2D5B13F216FEE8D100E47C81 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = "../../../git/clone/json-framework/src/main/objc/SBJsonParser.m"; sourceTree = "<group>"; };
@@ -136,13 +139,10 @@
 		2D68BABD16F5B753000E9AA3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2D68BAC816F5C1D0000E9AA3 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
 		2D68BAC916F5C1D0000E9AA3 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
-		2D68BAD016F8C984000E9AA3 /* DSComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSComponent.h; sourceTree = "<group>"; };
 		2DAB56E216F8DA72009F9CF2 /* JSONRPCInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCInternal.h; sourceTree = "<group>"; };
 		2DAB56E316F8DA72009F9CF2 /* JSONRPCInternal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCInternal.m; sourceTree = "<group>"; };
 		2DAB56E816FB6190009F9CF2 /* baumkuchen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baumkuchen.h; sourceTree = "<group>"; };
 		2DAB56E916FB6190009F9CF2 /* baumkuchen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baumkuchen.m; sourceTree = "<group>"; };
-		2DAB56EE16FB6277009F9CF2 /* DSComponentSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSComponentSQLite.h; sourceTree = "<group>"; };
-		2DAB56EF16FB6277009F9CF2 /* DSComponentSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSComponentSQLite.m; sourceTree = "<group>"; };
 		2DAB56F816FB6277009F9CF2 /* JSONRPCRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCRequest.h; sourceTree = "<group>"; };
 		2DAB56F916FB6277009F9CF2 /* JSONRPCRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCRequest.m; sourceTree = "<group>"; };
 		2DAB56FA16FB6278009F9CF2 /* JSONRPCResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCResponse.h; sourceTree = "<group>"; };
@@ -361,10 +361,10 @@
 		2D68B9F216F242E6000E9AA3 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				2D56CD2E1709FD7C006E679A /* DSEngine.h */,
 				2D68BAD416F8D2C7000E9AA3 /* Engine */,
 				2D68BAC816F5C1D0000E9AA3 /* DataSource.h */,
 				2D68BAC916F5C1D0000E9AA3 /* DataSource.m */,
-				2D68BAD016F8C984000E9AA3 /* DSComponent.h */,
 			);
 			name = DataSource;
 			sourceTree = "<group>";
@@ -424,8 +424,8 @@
 		2D68BAD416F8D2C7000E9AA3 /* Engine */ = {
 			isa = PBXGroup;
 			children = (
-				2DAB56EE16FB6277009F9CF2 /* DSComponentSQLite.h */,
-				2DAB56EF16FB6277009F9CF2 /* DSComponentSQLite.m */,
+				2D56CD2B1709FD67006E679A /* DSEngineSQLite.h */,
+				2D56CD2C1709FD67006E679A /* DSEngineSQLite.m */,
 			);
 			name = Engine;
 			sourceTree = "<group>";
@@ -561,7 +561,6 @@
 				2D68BACA16F5C1D0000E9AA3 /* DataSource.m in Sources */,
 				2DAB56E416F8DA72009F9CF2 /* JSONRPCInternal.m in Sources */,
 				2DAB56EA16FB6191009F9CF2 /* baumkuchen.m in Sources */,
-				2DAB56FC16FB6278009F9CF2 /* DSComponentSQLite.m in Sources */,
 				2DAB570116FB6278009F9CF2 /* JSONRPCRequest.m in Sources */,
 				2DAB570216FB6278009F9CF2 /* JSONRPCResponse.m in Sources */,
 				2DAB576416FB66A1009F9CF2 /* JSONRPCErrorMethodNotFound.m in Sources */,
@@ -581,6 +580,7 @@
 				2D56CC8A1700AC4F006E679A /* JSONRPC.m in Sources */,
 				2D56CC9B17021689006E679A /* Repository.m in Sources */,
 				2D56CC9F1702180A006E679A /* Factory.m in Sources */,
+				2D56CD2D1709FD67006E679A /* DSEngineSQLite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
