@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DomainData.h"
 
-@protocol Entity <NSObject>
+@protocol Entity <DomainData>
 
 @property (nonatomic, retain) NSNumber* primary;
 @property (nonatomic, retain) NSNumber* createdAt;

@@ -8,7 +8,7 @@
 
 #import "Repository.h"
 #import "RepositoryComponent.h"
-#import "Entity.h"
+#import "DomainData.h"
 
 @interface Repository()
 
@@ -18,9 +18,28 @@
 
 @implementation Repository
 
--(id<Entity>) lookup:(NSNumber*)entity
+-(id) initWithComponent:(id<RepositoryComponent>)component
 {
+    if (self == [super init]) {
+        self.component = component;
+    }
     
+    return self;
+}
+
+-(id<DomainData>) lookup:(NSNumber*)primary
+{
+    return [[self component] lookup:primary];
+}
+
+-(NSArray*) find
+{
+    return [[self component] find];
+}
+
+-(void) store:(id<DomainData>)domainData;
+{
+    [[self component] store:domainData];
 }
 
 @end

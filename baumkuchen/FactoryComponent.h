@@ -7,15 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Entity.h"
+#import "DomainData.h"
 
 // ImplClass should be implement in DataSource layer
 // because that implementation would be bound with datasource specs.
 
 @protocol FactoryComponent <NSObject>
 
--(id<Entity>) create;
--(void) drop:(id<Entity>)entity;
+-(id<DomainData>) create;
+-(void) drop:(id<DomainData>)entity;
 
 @end
 

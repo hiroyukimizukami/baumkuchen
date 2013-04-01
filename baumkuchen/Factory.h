@@ -8,13 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "FactoryComponent.h"
-#import "Entity.h"
+#import "DomainData.h"
 
 @interface Factory : NSObject
 
 
 -(id) initWithComponent:(id<FactoryComponent>)component;
--(id<Entity>) create;
--(void) drop:(id<Entity>)entity;
+-(id<DomainData>) create;
+-(void) drop:(id<DomainData>)domainData;
 
 @end

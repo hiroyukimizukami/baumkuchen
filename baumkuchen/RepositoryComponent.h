@@ -7,16 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Entity.h"
+#import "DomainData.h"
 
 // ImplClass should be implement in DataSource layer
 // because that implementation would be bound with datasource specs.
 @protocol RepositoryComponent <NSObject>
 
--(id<Entity>) lookup:(NSNumber*)primary;
--(id<Entity>) find;
--(NSArray*) findChildsOf:(NSNumber*)parent;
--(void) store:(id<Entity>)entity;
+-(id<DomainData>) lookup:(NSNumber*)primary;
+-(NSArray*) find;
+-(void) store:(id<DomainData>)entity;
 
 
 @end

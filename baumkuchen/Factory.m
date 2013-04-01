@@ -17,4 +17,23 @@
 
 @implementation Factory
 
+-(id) initWithComponent:(id<FactoryComponent>)component
+{
+    if (self == [super init]) {
+        self.component = component;
+    }
+    
+    return self;
+}
+
+-(id<DomainData>) create
+{
+    return [[self component] create];
+}
+
+-(void) drop:(id<DomainData>)domainData
+{
+    [[self component] drop:domainData];
+}
+
 @end

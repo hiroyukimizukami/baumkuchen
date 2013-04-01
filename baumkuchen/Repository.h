@@ -8,14 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "RepositoryComponent.h"
-#import "Entity.h"
+#import "DomainData.h"
 
 @interface Repository : NSObject
 
 -(id) initWithComponent:(id<RepositoryComponent>)component;
--(id<Entity>) lookup:(NSNumber*)entity;
--(id<Entity>) find;
--(id<Entity>) findChildsOf:(NSNumber*)parent;
--(void) store:(id<Entity>)entity;
+-(id<DomainData>) lookup:(NSNumber*)primary;
+-(NSArray*) find;
+-(void) store:(id<DomainData>)DomainData;
 
 @end
