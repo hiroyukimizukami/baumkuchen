@@ -13,6 +13,8 @@
 
 @interface JSONRPCInternal : NSObject<JSONRPCComponent>
 
--(id) initWithComponent:(id<JSONRPCInternalComponent>)component;
+@property (strong, nonatomic)NSString* appNamespace;
+
+-(id) initWithAppNamespace:(NSString*) appNamespace;
 
 @end

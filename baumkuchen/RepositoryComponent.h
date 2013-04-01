@@ -13,9 +13,9 @@
 // because that implementation would be bound with datasource specs.
 @protocol RepositoryComponent <NSObject>
 
--(id<Entity>) lookup:(NSNumber*)entity;
+-(id<Entity>) lookup:(NSNumber*)primary;
 -(id<Entity>) find;
--(id<Entity>) findChildsOf:(NSNumber*)parent;
+-(NSArray*) findChildsOf:(NSNumber*)parent;
 -(void) store:(id<Entity>)entity;
 
 

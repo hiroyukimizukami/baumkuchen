@@ -8,7 +8,6 @@
 
 #import "TestJSONRPCInternal.h"
 #import "JSONRPCInternal.h"
-#import "MockJSONRPCInternalComponent.h"
 #import "JSONRPCRequest.h"
 #import "JSONRPCRequest.h"
 #import "JSONRPCErrorMethodNotFound.h"
@@ -19,18 +18,16 @@
 
 -(void) testCreateOk
 {
-    MockJSONRPCInternalComponent* component = [[MockJSONRPCInternalComponent alloc] init];
     JSONRPCInternal* internal;
-    STAssertNoThrow(internal = [[JSONRPCInternal alloc] initWithComponent:component], @"crete ok");
+    STAssertNoThrow(internal = [[JSONRPCInternal alloc] initWithAppNamespace:@"com.baumkuchen.test"], @"crete ok");
 }
 
 -(void) testCallOk
 {
-    MockJSONRPCInternalComponent* component = [[MockJSONRPCInternalComponent alloc] init];
-    JSONRPCInternal* internal = [[JSONRPCInternal alloc] initWithComponent:component];
-    
+    JSONRPCInternal* internal = [[JSONRPCInternal alloc] initWithAppNamespace:@"com.baumkuchen.test"];
+
     NSDictionary* param = @{@"hoo" : @"bar"};
-    JSONRPCRequest* request = [[JSONRPCRequest alloc] initWithParams:param AndId:@"0" AndMethod:@"lookup"];
+    JSONRPCRequest* request = [[JSONRPCRequest alloc] initWithParams:param AndId:@"0" AndMethod:@"com.baumkuchen.test.mock.lookup"];
     
     JSONRPCResponse* response;
     STAssertNoThrow(response = [internal call:request], @"call ok");
@@ -40,8 +37,7 @@
 
 -(void) testCallMethodButDoesntExist
 {
-    MockJSONRPCInternalComponent* component = [[MockJSONRPCInternalComponent alloc] init];
-    JSONRPCInternal* internal = [[JSONRPCInternal alloc] initWithComponent:component];
+    JSONRPCInternal* internal = [[JSONRPCInternal alloc] initWithAppNamespace:@"com.baumkuchen.test"];
     
     NSDictionary* param = @{@"hoo" : @"bar"};
     JSONRPCRequest* request = [[JSONRPCRequest alloc] initWithParams:param AndId:@"0" AndMethod:@"hoge"];
@@ -55,11 +51,10 @@
 
 -(void) testCallInvalidParams
 {
-    MockJSONRPCInternalComponent* component = [[MockJSONRPCInternalComponent alloc] init];
-    JSONRPCInternal* internal = [[JSONRPCInternal alloc] initWithComponent:component];
+    JSONRPCInternal* internal = [[JSONRPCInternal alloc] initWithAppNamespace:@"com.baumkuchen.test"];
     
     NSDictionary* param = @{@"failure" : @"bar"};
-    JSONRPCRequest* request = [[JSONRPCRequest alloc] initWithParams:param AndId:@"0" AndMethod:@"lookup"];
+    JSONRPCRequest* request = [[JSONRPCRequest alloc] initWithParams:param AndId:@"0" AndMethod:@"com.baumkuchen.test.mock.lookup"];
     
     JSONRPCResponse* response;
     STAssertNoThrow(response = [internal call:request], @"call ok");
@@ -70,18 +65,16 @@
 
 -(void) testCallInternalError
 {
-    MockJSONRPCInternalComponent* component = [[MockJSONRPCInternalComponent alloc] init];
-    JSONRPCInternal* internal = [[JSONRPCInternal alloc] initWithComponent:component];
+    JSONRPCInternal* internal = [[JSONRPCInternal alloc] initWithAppNamespace:@"com.baumkuchen.test"];
     
     NSDictionary* param = @{@"error" : @"bar"};
-    JSONRPCRequest* request = [[JSONRPCRequest alloc] initWithParams:param AndId:@"0" AndMethod:@"lookup"];
+    JSONRPCRequest* request = [[JSONRPCRequest alloc] initWithParams:param AndId:@"0" AndMethod:@"com.baumkuchen.test.mock.lookup"];
     
     JSONRPCResponse* response;
     STAssertNoThrow(response = [internal call:request], @"call ok");
     STAssertNil([response result], @"result is nil");
     STAssertNotNil([response error], @"error ok");
     STAssertTrue([[response error] isKindOfClass:[JSONRPCErrorInternalError class]], @"error is Method Not Found");
-    
 }
 
 

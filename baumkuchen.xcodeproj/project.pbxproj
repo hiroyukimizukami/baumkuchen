@@ -13,6 +13,7 @@
 		2D56CC9717020A6D006E679A /* MockJSONRPCComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D56CC9617020A6D006E679A /* MockJSONRPCComponent.m */; };
 		2D56CC9B17021689006E679A /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D56CC9A17021689006E679A /* Repository.m */; };
 		2D56CC9F1702180A006E679A /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D56CC9E1702180A006E679A /* Factory.m */; };
+		2D56CCA21709E98F006E679A /* MockJSONRPCInternalComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB576F16FCB592009F9CF2 /* MockJSONRPCInternalComponent.m */; };
 		2D5B140516FEE8D100E47C81 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5B13F216FEE8D100E47C81 /* SBJsonParser.m */; };
 		2D5B140616FEE8D100E47C81 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5B13F416FEE8D100E47C81 /* SBJsonStreamParser.m */; };
 		2D5B140716FEE8D100E47C81 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5B13F616FEE8D100E47C81 /* SBJsonStreamParserAccumulator.m */; };
@@ -40,15 +41,11 @@
 		2DAB56E416F8DA72009F9CF2 /* JSONRPCInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56E316F8DA72009F9CF2 /* JSONRPCInternal.m */; };
 		2DAB56EA16FB6191009F9CF2 /* baumkuchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56E916FB6190009F9CF2 /* baumkuchen.m */; };
 		2DAB56FC16FB6278009F9CF2 /* DSEngineSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56EF16FB6277009F9CF2 /* DSEngineSQLite.m */; };
-		2DAB56FE16FB6278009F9CF2 /* Gateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56F316FB6277009F9CF2 /* Gateway.m */; };
-		2DAB56FF16FB6278009F9CF2 /* GatewayCallHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56F516FB6277009F9CF2 /* GatewayCallHandler.m */; };
-		2DAB570016FB6278009F9CF2 /* GatewayOutputFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56F716FB6277009F9CF2 /* GatewayOutputFilter.m */; };
 		2DAB570116FB6278009F9CF2 /* JSONRPCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56F916FB6277009F9CF2 /* JSONRPCRequest.m */; };
 		2DAB570216FB6278009F9CF2 /* JSONRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB56FB16FB6278009F9CF2 /* JSONRPCResponse.m */; };
 		2DAB574E16FB6498009F9CF2 /* baumkuchenTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DAB574D16FB6498009F9CF2 /* baumkuchenTests-Info.plist */; };
 		2DAB575616FB6509009F9CF2 /* baumkuchenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB575316FB6509009F9CF2 /* baumkuchenTests.m */; };
 		2DAB575716FB6509009F9CF2 /* DSSQLiteEngineTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB575516FB6509009F9CF2 /* DSSQLiteEngineTest.m */; };
-		2DAB575A16FB651F009F9CF2 /* TestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB575916FB651F009F9CF2 /* TestEntity.m */; };
 		2DAB576416FB66A1009F9CF2 /* JSONRPCErrorMethodNotFound.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB576316FB66A1009F9CF2 /* JSONRPCErrorMethodNotFound.m */; };
 		2DAB576816FB694B009F9CF2 /* JSONRPCErrorInvalidParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB576716FB694B009F9CF2 /* JSONRPCErrorInvalidParams.m */; };
 		2DAB576D16FB6CEB009F9CF2 /* TestJSONRPCErrorMethodNotFound.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB576C16FB6CEB009F9CF2 /* TestJSONRPCErrorMethodNotFound.m */; };
@@ -145,12 +142,6 @@
 		2DAB56E916FB6190009F9CF2 /* baumkuchen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baumkuchen.m; sourceTree = "<group>"; };
 		2DAB56EE16FB6277009F9CF2 /* DSEngineSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSEngineSQLite.h; sourceTree = "<group>"; };
 		2DAB56EF16FB6277009F9CF2 /* DSEngineSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSEngineSQLite.m; sourceTree = "<group>"; };
-		2DAB56F216FB6277009F9CF2 /* Gateway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gateway.h; sourceTree = "<group>"; };
-		2DAB56F316FB6277009F9CF2 /* Gateway.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gateway.m; sourceTree = "<group>"; };
-		2DAB56F416FB6277009F9CF2 /* GatewayCallHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GatewayCallHandler.h; sourceTree = "<group>"; };
-		2DAB56F516FB6277009F9CF2 /* GatewayCallHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GatewayCallHandler.m; sourceTree = "<group>"; };
-		2DAB56F616FB6277009F9CF2 /* GatewayOutputFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GatewayOutputFilter.h; sourceTree = "<group>"; };
-		2DAB56F716FB6277009F9CF2 /* GatewayOutputFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GatewayOutputFilter.m; sourceTree = "<group>"; };
 		2DAB56F816FB6277009F9CF2 /* JSONRPCRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCRequest.h; sourceTree = "<group>"; };
 		2DAB56F916FB6277009F9CF2 /* JSONRPCRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCRequest.m; sourceTree = "<group>"; };
 		2DAB56FA16FB6278009F9CF2 /* JSONRPCResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCResponse.h; sourceTree = "<group>"; };
@@ -160,8 +151,6 @@
 		2DAB575316FB6509009F9CF2 /* baumkuchenTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baumkuchenTests.m; sourceTree = "<group>"; };
 		2DAB575416FB6509009F9CF2 /* DSSQLiteEngineTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSSQLiteEngineTest.h; sourceTree = "<group>"; };
 		2DAB575516FB6509009F9CF2 /* DSSQLiteEngineTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSSQLiteEngineTest.m; sourceTree = "<group>"; };
-		2DAB575816FB651F009F9CF2 /* TestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestEntity.h; sourceTree = "<group>"; };
-		2DAB575916FB651F009F9CF2 /* TestEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestEntity.m; sourceTree = "<group>"; };
 		2DAB576216FB66A1009F9CF2 /* JSONRPCErrorMethodNotFound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCErrorMethodNotFound.h; sourceTree = "<group>"; };
 		2DAB576316FB66A1009F9CF2 /* JSONRPCErrorMethodNotFound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCErrorMethodNotFound.m; sourceTree = "<group>"; };
 		2DAB576516FB670E009F9CF2 /* JSONRPCError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONRPCError.h; sourceTree = "<group>"; };
@@ -238,6 +227,19 @@
 			name = Internal;
 			sourceTree = "<group>";
 		};
+		2D56CCA31709EA09006E679A /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				2DAB576616FB694B009F9CF2 /* JSONRPCErrorInvalidParams.h */,
+				2DAB576716FB694B009F9CF2 /* JSONRPCErrorInvalidParams.m */,
+				2DAB577416FCC51D009F9CF2 /* JSONRPCErrorInternalError.h */,
+				2DAB577516FCC51D009F9CF2 /* JSONRPCErrorInternalError.m */,
+				2DAB576216FB66A1009F9CF2 /* JSONRPCErrorMethodNotFound.h */,
+				2DAB576316FB66A1009F9CF2 /* JSONRPCErrorMethodNotFound.m */,
+			);
+			name = Error;
+			sourceTree = "<group>";
+		};
 		2D5B13EF16FEE8A700E47C81 /* json-framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,8 +306,7 @@
 				2DAB56E916FB6190009F9CF2 /* baumkuchen.m */,
 				2D68B9F316F242F0000E9AA3 /* Gateway */,
 				2D68B9F216F242E6000E9AA3 /* DataSource */,
-				2D68B9F116F242DF000E9AA3 /* Model */,
-				2D68B9F016F242D2000E9AA3 /* Common */,
+				2D68B9F116F242DF000E9AA3 /* Domain */,
 				2D68BA0216F243D4000E9AA3 /* README.md */,
 				2D68B9CB16F23FFD000E9AA3 /* Supporting Files */,
 			);
@@ -323,11 +324,11 @@
 		2D68B9DF16F23FFD000E9AA3 /* baumkuchenTests */ = {
 			isa = PBXGroup;
 			children = (
-				2DAB576916FB6CC9009F9CF2 /* Common */,
+				2DAB576916FB6CC9009F9CF2 /* Gateway */,
 				2DAB575216FB6509009F9CF2 /* baumkuchenTests.h */,
 				2DAB575316FB6509009F9CF2 /* baumkuchenTests.m */,
 				2DAB574D16FB6498009F9CF2 /* baumkuchenTests-Info.plist */,
-				2D68BAC216F5BCEB000E9AA3 /* Model */,
+				2D68BAC216F5BCEB000E9AA3 /* Domain */,
 				2D68BA5416F5A115000E9AA3 /* DataSource */,
 				2D68B9E016F23FFD000E9AA3 /* Supporting Files */,
 			);
@@ -341,18 +342,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2D68B9F016F242D2000E9AA3 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				2DAB56E016F8D828009F9CF2 /* JSONRPC */,
-				2D56CC871700AA00006E679A /* JSONRPCComponent.h */,
-				2D56CC881700AC4F006E679A /* JSONRPC.h */,
-				2D56CC891700AC4F006E679A /* JSONRPC.m */,
-			);
-			name = Common;
-			sourceTree = "<group>";
-		};
-		2D68B9F116F242DF000E9AA3 /* Model */ = {
+		2D68B9F116F242DF000E9AA3 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
 				2D56CC9917021689006E679A /* Repository.h */,
@@ -363,7 +353,7 @@
 				2D56CCA01702189E006E679A /* RepositoryComponent.h */,
 				2D56CCA117021925006E679A /* FactoryComponent.h */,
 			);
-			name = Model;
+			name = Domain;
 			sourceTree = "<group>";
 		};
 		2D68B9F216F242E6000E9AA3 /* DataSource */ = {
@@ -380,12 +370,9 @@
 		2D68B9F316F242F0000E9AA3 /* Gateway */ = {
 			isa = PBXGroup;
 			children = (
-				2DAB56F216FB6277009F9CF2 /* Gateway.h */,
-				2DAB56F316FB6277009F9CF2 /* Gateway.m */,
-				2DAB56F416FB6277009F9CF2 /* GatewayCallHandler.h */,
-				2DAB56F516FB6277009F9CF2 /* GatewayCallHandler.m */,
-				2DAB56F616FB6277009F9CF2 /* GatewayOutputFilter.h */,
-				2DAB56F716FB6277009F9CF2 /* GatewayOutputFilter.m */,
+				2D56CC881700AC4F006E679A /* JSONRPC.h */,
+				2D56CC891700AC4F006E679A /* JSONRPC.m */,
+				2DAB56E016F8D828009F9CF2 /* JSONRPC */,
 			);
 			name = Gateway;
 			sourceTree = "<group>";
@@ -425,13 +412,11 @@
 			name = fmdb;
 			sourceTree = "<group>";
 		};
-		2D68BAC216F5BCEB000E9AA3 /* Model */ = {
+		2D68BAC216F5BCEB000E9AA3 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				2DAB575816FB651F009F9CF2 /* TestEntity.h */,
-				2DAB575916FB651F009F9CF2 /* TestEntity.m */,
 			);
-			name = Model;
+			name = Domain;
 			sourceTree = "<group>";
 		};
 		2D68BAD416F8D2C7000E9AA3 /* Engine */ = {
@@ -446,30 +431,26 @@
 		2DAB56E016F8D828009F9CF2 /* JSONRPC */ = {
 			isa = PBXGroup;
 			children = (
+				2D56CC871700AA00006E679A /* JSONRPCComponent.h */,
+				2D56CCA31709EA09006E679A /* Error */,
 				2D56CC8F17020512006E679A /* Internal */,
 				2DAB56F816FB6277009F9CF2 /* JSONRPCRequest.h */,
 				2DAB56F916FB6277009F9CF2 /* JSONRPCRequest.m */,
 				2DAB56FA16FB6278009F9CF2 /* JSONRPCResponse.h */,
 				2DAB56FB16FB6278009F9CF2 /* JSONRPCResponse.m */,
-				2DAB576216FB66A1009F9CF2 /* JSONRPCErrorMethodNotFound.h */,
-				2DAB576316FB66A1009F9CF2 /* JSONRPCErrorMethodNotFound.m */,
 				2DAB576516FB670E009F9CF2 /* JSONRPCError.h */,
-				2DAB576616FB694B009F9CF2 /* JSONRPCErrorInvalidParams.h */,
-				2DAB576716FB694B009F9CF2 /* JSONRPCErrorInvalidParams.m */,
-				2DAB577416FCC51D009F9CF2 /* JSONRPCErrorInternalError.h */,
-				2DAB577516FCC51D009F9CF2 /* JSONRPCErrorInternalError.m */,
 			);
 			name = JSONRPC;
 			sourceTree = "<group>";
 		};
-		2DAB576916FB6CC9009F9CF2 /* Common */ = {
+		2DAB576916FB6CC9009F9CF2 /* Gateway */ = {
 			isa = PBXGroup;
 			children = (
 				2D56CC901702055E006E679A /* JSONRPC */,
 				2D56CC8116FEEE9A006E679A /* TestJSONRPCRequest.h */,
 				2D56CC8216FEEE9A006E679A /* TestJSONRPCRequest.m */,
 			);
-			name = Common;
+			name = Gateway;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -579,9 +560,6 @@
 				2DAB56E416F8DA72009F9CF2 /* JSONRPCInternal.m in Sources */,
 				2DAB56EA16FB6191009F9CF2 /* baumkuchen.m in Sources */,
 				2DAB56FC16FB6278009F9CF2 /* DSEngineSQLite.m in Sources */,
-				2DAB56FE16FB6278009F9CF2 /* Gateway.m in Sources */,
-				2DAB56FF16FB6278009F9CF2 /* GatewayCallHandler.m in Sources */,
-				2DAB570016FB6278009F9CF2 /* GatewayOutputFilter.m in Sources */,
 				2DAB570116FB6278009F9CF2 /* JSONRPCRequest.m in Sources */,
 				2DAB570216FB6278009F9CF2 /* JSONRPCResponse.m in Sources */,
 				2DAB576416FB66A1009F9CF2 /* JSONRPCErrorMethodNotFound.m in Sources */,
@@ -608,9 +586,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D56CCA21709E98F006E679A /* MockJSONRPCInternalComponent.m in Sources */,
 				2DAB575616FB6509009F9CF2 /* baumkuchenTests.m in Sources */,
 				2DAB575716FB6509009F9CF2 /* DSSQLiteEngineTest.m in Sources */,
-				2DAB575A16FB651F009F9CF2 /* TestEntity.m in Sources */,
 				2DAB576D16FB6CEB009F9CF2 /* TestJSONRPCErrorMethodNotFound.m in Sources */,
 				2DAB577316FCB5A0009F9CF2 /* TestJSONRPC.m in Sources */,
 				2D56CC8316FEEE9A006E679A /* TestJSONRPCRequest.m in Sources */,
