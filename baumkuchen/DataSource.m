@@ -29,6 +29,21 @@
     [[self engine] close];
 }
 
+-(void) begin
+{
+    [[self engine] close];
+}
+
+-(void) commit
+{
+    [[self engine] commit];
+}
+
+-(void) rollback
+{
+    [[self engine] rollback];
+}
+
 -(BOOL) command:(NSString *)sql WithParam:(NSDictionary *)param
 {
     return [[self engine] command:sql WithParam:param];

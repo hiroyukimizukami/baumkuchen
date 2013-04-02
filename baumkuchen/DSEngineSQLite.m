@@ -53,6 +53,22 @@
     
 }
 
+-(void) begin
+{
+    [[self dataSource] beginTransaction];
+}
+
+-(void) commit
+{
+    [[self dataSource] commit];
+}
+
+-(void) rollback
+{
+    [[self dataSource] rollback];
+}
+
+
 - (BOOL) command:(NSString*)sql WithParam:(NSDictionary*)param
 {
     BOOL result = [[self dataSource] executeUpdate:sql withParameterDictionary:param];

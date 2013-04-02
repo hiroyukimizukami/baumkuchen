@@ -11,6 +11,9 @@
 @protocol DSEngine <NSObject>
 -(void) open;
 -(void) close;
+-(void) begin;
+-(void) commit;
+-(void) rollback;
 - (BOOL) command:(NSString*)sql WithParam:(NSDictionary*)param;
 - (NSArray*) query:(NSString*)sql WithParam:(NSDictionary*)param;
 @end
