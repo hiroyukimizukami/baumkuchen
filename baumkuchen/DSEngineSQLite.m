@@ -38,8 +38,8 @@
 - (void) open
 {
     if ([self dataSource] == Nil) {
-        if ([self absolutePath]) {
-            [NSException raise:@"DB file name was not founct." format:@""];
+        if (![self absolutePath]) {
+            [NSException raise:@"DB file name was not found." format:@""];
         }
         self.dataSource = [FMDatabase databaseWithPath:[self absolutePath]];
     }
@@ -86,7 +86,7 @@
     FMResultSet* rs = [[self dataSource] executeQuery:sql withParameterDictionary:param];
     if (rs == Nil) {
         NSString* errorMessage = [[self dataSource] lastErrorMessage];
-        NSLog(@"%@", errorMessage);
+        [NSException raise:@"DataFetchException" format:@"Cause:%@", errorMessage];
     }
 
     while ([rs next]) {

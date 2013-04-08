@@ -61,7 +61,7 @@
         return response;
     }
 
-    if (![component validate:functionName AndParams:params]) {
+    if (![component validateInput:functionName AndParams:params]) {
         JSONRPCErrorInvalidParams* error = [[JSONRPCErrorInvalidParams alloc] init];
         JSONRPCResponse* response = [[JSONRPCResponse alloc] initWithError:error AndId:jsonrpcId];
         

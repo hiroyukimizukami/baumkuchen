@@ -10,7 +10,11 @@
 
 @protocol JSONRPCInternalComponent <NSObject>
 
--(BOOL) validate:(NSString*)method AndParams:(NSDictionary*)params;
+//TODO rename to validateInput
+-(BOOL) validateInput:(NSString*)method AndParams:(NSDictionary*)params;
+-(BOOL) validateOutput:(NSString*)method AndParams:(NSArray*)output;
+
+//TOOD add validateOutput
 
 //Methods of a class to impl this protocol must have folloing signature.
 //input -> NSDictionary*, output -> NSArray*

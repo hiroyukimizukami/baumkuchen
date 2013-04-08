@@ -10,11 +10,16 @@
 
 @implementation MockJSONRPCInternalComponent
 
--(BOOL) validate:(NSString*)method AndParams:(NSDictionary *)params
+-(BOOL) validateInput:(NSString*)method AndParams:(NSDictionary *)params
 {
     if ([params objectForKey:@"failure"] != Nil) {
         return FALSE;
     }
+    return TRUE;
+}
+
+-(BOOL) validateOutput:(NSString *)method AndParams:(NSArray *)output
+{
     return TRUE;
 }
 
