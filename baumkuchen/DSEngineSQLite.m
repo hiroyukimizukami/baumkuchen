@@ -74,7 +74,7 @@
     BOOL result = [[self dataSource] executeUpdate:sql withParameterDictionary:param];
     if (result != TRUE) {
         NSString* errorMessage = [[self dataSource] lastErrorMessage];
-        NSLog(@"%@", errorMessage);
+        [NSException raise:@"DataCommandException" format:@"Requested command has failed. Cause:%@", errorMessage];
     }
     return result;
 }

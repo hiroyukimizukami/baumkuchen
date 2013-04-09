@@ -15,7 +15,7 @@
 
 -(id<DomainData>) lookup:(NSNumber*)primary;
 -(NSArray*) find;
--(void) store:(id<DomainData>)entity;
+-(void) store:(id<DomainData>)domainData;
 
 
 @end
