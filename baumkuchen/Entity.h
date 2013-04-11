@@ -12,7 +12,7 @@
 @protocol Entity <DomainData>
 
 @property (nonatomic, retain) NSNumber* primary;
-@property (nonatomic, retain) NSNumber* createdAt;
-@property (nonatomic, retain) NSNumber* updatedAt;
+@property (nonatomic, retain) NSDate* createdAt;
+@property (nonatomic, retain) NSDate* updatedAt;
 
 @end
