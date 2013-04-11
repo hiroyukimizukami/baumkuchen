@@ -1,5 +1,5 @@
 //
-//  Repository.h
+//  RepositoryComponent.h
 //  baumkuchen
 //
 //  Created by hiroyuki.mizukami on 3/27/13.
@@ -7,14 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RepositoryComponent.h"
-#import "DomainData.h"
+#import "Entity.h"
 
-@interface Repository : NSObject
+// ImplClass should be implement in DataSource layer
+// because that implementation would be bound with datasource specs.
+@protocol Repository <NSObject>
 
--(id) initWithComponent:(id<RepositoryComponent>)component;
--(id<DomainData>) lookup:(NSNumber*)primary;
+-(id<Entity>) lookup:(NSNumber*)primary;
+-(NSArray*) findChildsOf:(NSNumber*)primary;
 -(NSArray*) find;
--(void) store:(id<DomainData>)DomainData;
+-(void) store:(id<Entity>)entity;
+
 
 @end

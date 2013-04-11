@@ -11,8 +11,6 @@
 		2D56CC8A1700AC4F006E679A /* JSONRPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D56CC891700AC4F006E679A /* JSONRPC.m */; };
 		2D56CC94170205E8006E679A /* TestJSONRPCInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D56CC93170205E8006E679A /* TestJSONRPCInternal.m */; };
 		2D56CC9717020A6D006E679A /* MockJSONRPCComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D56CC9617020A6D006E679A /* MockJSONRPCComponent.m */; };
-		2D56CC9B17021689006E679A /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D56CC9A17021689006E679A /* Repository.m */; };
-		2D56CC9F1702180A006E679A /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D56CC9E1702180A006E679A /* Factory.m */; };
 		2D56CCA21709E98F006E679A /* MockJSONRPCInternalComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB576F16FCB592009F9CF2 /* MockJSONRPCInternalComponent.m */; };
 		2D56CD2D1709FD67006E679A /* DSEngineSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D56CD2C1709FD67006E679A /* DSEngineSQLite.m */; };
 		2D56CE3817132E85006E679A /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D56CE2517132E85006E679A /* SBJsonParser.m */; };
@@ -89,13 +87,9 @@
 		2D56CC93170205E8006E679A /* TestJSONRPCInternal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestJSONRPCInternal.m; sourceTree = "<group>"; };
 		2D56CC9517020A6D006E679A /* MockJSONRPCComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockJSONRPCComponent.h; sourceTree = "<group>"; };
 		2D56CC9617020A6D006E679A /* MockJSONRPCComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockJSONRPCComponent.m; sourceTree = "<group>"; };
-		2D56CC9917021689006E679A /* Repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
-		2D56CC9A17021689006E679A /* Repository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Repository.m; sourceTree = "<group>"; };
 		2D56CC9C170216F5006E679A /* Entity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
-		2D56CC9D1702180A006E679A /* Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factory.h; sourceTree = "<group>"; };
-		2D56CC9E1702180A006E679A /* Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factory.m; sourceTree = "<group>"; };
-		2D56CCA01702189E006E679A /* RepositoryComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoryComponent.h; sourceTree = "<group>"; };
-		2D56CCA117021925006E679A /* FactoryComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactoryComponent.h; sourceTree = "<group>"; };
+		2D56CCA01702189E006E679A /* Repository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
+		2D56CCA117021925006E679A /* Factory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Factory.h; sourceTree = "<group>"; };
 		2D56CD281709F713006E679A /* DomainData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DomainData.h; sourceTree = "<group>"; };
 		2D56CD2B1709FD67006E679A /* DSEngineSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSEngineSQLite.h; sourceTree = "<group>"; };
 		2D56CD2C1709FD67006E679A /* DSEngineSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSEngineSQLite.m; sourceTree = "<group>"; };
@@ -135,6 +129,7 @@
 		2D56CE551714803A006E679A /* MockDSEngineImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockDSEngineImpl.m; sourceTree = "<group>"; };
 		2D56CE5817148468006E679A /* TestDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDataSource.h; sourceTree = "<group>"; };
 		2D56CE5917148468006E679A /* TestDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDataSource.m; sourceTree = "<group>"; };
+		2D56CE5B17171BAF006E679A /* ValueObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValueObject.h; sourceTree = "<group>"; };
 		2D68B9C516F23FFD000E9AA3 /* libbaumkuchen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbaumkuchen.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D68B9C816F23FFD000E9AA3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2D68B9CC16F23FFD000E9AA3 /* baumkuchen-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "baumkuchen-Prefix.pch"; sourceTree = "<group>"; };
@@ -247,17 +242,6 @@
 			name = Error;
 			sourceTree = "<group>";
 		};
-		2D56CE5717148092006E679A /* DataSrouce */ = {
-			isa = PBXGroup;
-			children = (
-				2D56CE541714803A006E679A /* MockDSEngineImpl.h */,
-				2D56CE551714803A006E679A /* MockDSEngineImpl.m */,
-				2D56CE5817148468006E679A /* TestDataSource.h */,
-				2D56CE5917148468006E679A /* TestDataSource.m */,
-			);
-			name = DataSrouce;
-			sourceTree = "<group>";
-		};
 		2D5B13EF16FEE8A700E47C81 /* json-framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,7 +326,6 @@
 		2D68B9DF16F23FFD000E9AA3 /* baumkuchenTests */ = {
 			isa = PBXGroup;
 			children = (
-				2D56CE5717148092006E679A /* DataSrouce */,
 				2DAB576916FB6CC9009F9CF2 /* Gateway */,
 				2DAB575216FB6509009F9CF2 /* baumkuchenTests.h */,
 				2DAB575316FB6509009F9CF2 /* baumkuchenTests.m */,
@@ -364,14 +347,11 @@
 		2D68B9F116F242DF000E9AA3 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				2D56CC9917021689006E679A /* Repository.h */,
-				2D56CC9A17021689006E679A /* Repository.m */,
 				2D56CC9C170216F5006E679A /* Entity.h */,
-				2D56CC9D1702180A006E679A /* Factory.h */,
-				2D56CC9E1702180A006E679A /* Factory.m */,
-				2D56CCA01702189E006E679A /* RepositoryComponent.h */,
-				2D56CCA117021925006E679A /* FactoryComponent.h */,
+				2D56CCA01702189E006E679A /* Repository.h */,
+				2D56CCA117021925006E679A /* Factory.h */,
 				2D56CD281709F713006E679A /* DomainData.h */,
+				2D56CE5B17171BAF006E679A /* ValueObject.h */,
 			);
 			name = Domain;
 			sourceTree = "<group>";
@@ -400,6 +380,10 @@
 		2D68BA5416F5A115000E9AA3 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				2D56CE541714803A006E679A /* MockDSEngineImpl.h */,
+				2D56CE551714803A006E679A /* MockDSEngineImpl.m */,
+				2D56CE5817148468006E679A /* TestDataSource.h */,
+				2D56CE5917148468006E679A /* TestDataSource.m */,
 				2DAB575416FB6509009F9CF2 /* DSSQLiteEngineTest.h */,
 				2DAB575516FB6509009F9CF2 /* DSSQLiteEngineTest.m */,
 			);
@@ -581,8 +565,6 @@
 				2DAB577016FCB592009F9CF2 /* MockJSONRPCInternalComponent.m in Sources */,
 				2DAB577616FCC51D009F9CF2 /* JSONRPCErrorInternalError.m in Sources */,
 				2D56CC8A1700AC4F006E679A /* JSONRPC.m in Sources */,
-				2D56CC9B17021689006E679A /* Repository.m in Sources */,
-				2D56CC9F1702180A006E679A /* Factory.m in Sources */,
 				2D56CD2D1709FD67006E679A /* DSEngineSQLite.m in Sources */,
 				2D56CE3817132E85006E679A /* SBJsonParser.m in Sources */,
 				2D56CE3917132E85006E679A /* SBJsonStreamParser.m in Sources */,

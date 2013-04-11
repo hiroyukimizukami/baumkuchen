@@ -1,5 +1,5 @@
 //
-//  Factory.h
+//  FactoryComponent.h
 //  baumkuchen
 //
 //  Created by hiroyuki.mizukami on 3/27/13.
@@ -7,14 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FactoryComponent.h"
 #import "DomainData.h"
 
-@interface Factory : NSObject
+// ImplClass should be implement in DataSource layer
+// because that implementation would be bound with datasource specs.
 
+@protocol Factory <NSObject>
 
--(id) initWithComponent:(id<FactoryComponent>)component;
 -(id<DomainData>) create;
--(void) drop:(id<DomainData>)domainData;
+-(void) drop:(id<DomainData>)entity;
 
 @end
+

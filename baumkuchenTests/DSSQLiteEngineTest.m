@@ -11,7 +11,7 @@
 
 @implementation DSSQLiteEngineTest
 
--(void) testConnection
+-(void) testCanConnect
 {
     long nowLong = [[NSDate date] timeIntervalSince1970];
     int rand = arc4random() % 999;
