@@ -17,6 +17,6 @@
 -(NSArray*) findChildsOf:(NSNumber*)primary;
 -(NSArray*) find;
 -(void) store:(id<Entity>)entity;
-
+-(void) drop:(NSNumber*)primary;
 
 @end

@@ -15,7 +15,6 @@
 @protocol Factory <NSObject>
 
 -(id<DomainData>) create;
--(void) drop:(id<DomainData>)entity;
 
 @end
 

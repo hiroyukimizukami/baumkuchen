@@ -11,6 +11,10 @@
 
 @interface DataSource : NSObject
 
+
+//TODO
+// XXX ... primitive IF it contains command ,query and primitive DCL.
+// DataSource ... public IF thus it should contains crud and select(one|all|parend|root)
 @property (nonatomic, strong) id<DSEngine> engine;
 
 -(id) initWithEngine:(id<DSEngine>) engine;
