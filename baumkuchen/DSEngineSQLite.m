@@ -50,7 +50,6 @@
 - (void) close
 {
     [[self dataSource] close];
-    
 }
 
 -(void) begin
@@ -95,12 +94,6 @@
     [rs close];
     
     return result;
-}
-
-
-- (void) dealloc
-{
-    [self close];
 }
 
 @end

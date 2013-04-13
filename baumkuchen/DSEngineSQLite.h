@@ -15,6 +15,4 @@
 -(id) initWithDBName:(NSString*) dbFileName;
 -(NSString*) getAbsolutePath;
 
--(void) dealloc;
-
 @end

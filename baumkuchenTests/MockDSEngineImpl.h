@@ -11,8 +11,6 @@
 
 @interface MockDSEngineImpl : NSObject<DSEngine>
 
-@property (weak, nonatomic) id inspector;
-@property (weak, nonatomic) NSArray* selectors;
-@property (weak, nonatomic) id mockedResult;
+@property (strong, nonatomic) NSDictionary* latestParams;
 
 @end

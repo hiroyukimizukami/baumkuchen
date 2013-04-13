@@ -18,13 +18,17 @@
 @property (nonatomic, strong) id<DSEngine> engine;
 
 -(id) initWithEngine:(id<DSEngine>) engine;
+-(NSDictionary*)selectOne:(NSString*)sql With:(NSNumber*)primary;
+-(NSArray*) selectAll:(NSString*)sql;
+-(NSArray*) selectSome:(NSString*)sql With:(NSDictionary*)param;
+-(BOOL) update:(NSString*)sql With:(NSDictionary*)param;
+-(BOOL) remove:(NSString*)sql With:(NSDictionary*)param;
+-(BOOL) insert:(NSString*)sql With:(NSDictionary*)param;
+
 -(void) open;
 -(void) close;
 -(void) begin;
 -(void) commit;
 -(void) rollback;
-- (BOOL) command:(NSString*)sql WithParam:(NSDictionary*)param;
-- (NSArray*) query:(NSString*)sql WithParam:(NSDictionary*)param;
-
 
 @end

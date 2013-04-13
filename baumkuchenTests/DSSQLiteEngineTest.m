@@ -7,30 +7,60 @@
 //
 
 #import "DSSQLiteEngineTest.h"
+#import "TestDBUtil.h"
 #import "DSEngineSQLite.h"
 
 @implementation DSSQLiteEngineTest
 
--(void) testCanConnect
-{
-    long nowLong = [[NSDate date] timeIntervalSince1970];
-    int rand = arc4random() % 999;
-    
-    NSString* name = [[NSString stringWithFormat:@"%ld", nowLong] stringByAppendingString:[NSString stringWithFormat:@"%d", rand]];
-    NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
-    [f setNumberStyle:NSNumberFormatterDecimalStyle];
-
-    DSEngineSQLite* db = [[DSEngineSQLite alloc] initWithDBName:name];
-    STAssertNotNil(db, @"use ok");
-    STAssertNotNil([db getAbsolutePath], @"db's absolute path");
-    
-    [db close];
-    
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    BOOL success = [fileManager removeItemAtPath:name error:NULL];
-    NSLog(@"%i", success);
-
-
-}
+//-(void) testCanConnectAndCreateDB
+//{
+//    NSString* name = [TestDBUtil getTmpDBName];
+//    DSEngineSQLite* db = [[DSEngineSQLite alloc] initWithDBName:name];
+//    STAssertNotNil(db, @"use ok");
+//    STAssertNotNil([db getAbsolutePath], @"db's absolute path");
+//}
+//
+//-(void) testQuery
+//{
+//    NSString* name = [TestDBUtil getTmpDBName];
+//    DSEngineSQLite* db = [[DSEngineSQLite alloc] initWithDBName:name];
+//    STAssertNotNil(db, @"use ok");
+//    STAssertNotNil([db getAbsolutePath], @"db's absolute path");
+//    
+//    [db open];
+//    @try {
+//        NSString* sql = @"select name from sql_master where type='table';";
+//        STAssertNoThrow([db query:sql WithParam:@{}], @"query ok");
+//    }
+//    @catch (NSException *exception) {
+//        ;
+//    }
+//    @finally {
+//        [db close];
+//        [TestDBUtil dropTmpDB:name];
+//    }
+//}
+//
+//-(void) testCommand
+//{
+//    NSString* name = [TestDBUtil getTmpDBName];
+//    DSEngineSQLite* db = [[DSEngineSQLite alloc] initWithDBName:name];
+//    STAssertNotNil(db, @"use ok");
+//    STAssertNotNil([db getAbsolutePath], @"db's absolute path");
+//    NSLog(@"%@", [db getAbsolutePath]);
+//    
+//    [db open];
+//    @try {
+//        NSString* sql = @"create table hoge (id integer primary key);";
+//        STAssertNoThrow([db command:sql WithParam:@{}], @"command ok");
+//    }
+//    @catch (NSException *exception) {
+//        ;
+//    }
+//    @finally {
+//        [db close];
+//        [TestDBUtil dropTmpDB:name];
+//    }
+//}
 
 @end

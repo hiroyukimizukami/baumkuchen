@@ -52,6 +52,7 @@
 		2DAB577016FCB592009F9CF2 /* MockJSONRPCInternalComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB576F16FCB592009F9CF2 /* MockJSONRPCInternalComponent.m */; };
 		2DAB577316FCB5A0009F9CF2 /* TestJSONRPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB577216FCB5A0009F9CF2 /* TestJSONRPC.m */; };
 		2DAB577616FCC51D009F9CF2 /* JSONRPCErrorInternalError.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAB577516FCC51D009F9CF2 /* JSONRPCErrorInternalError.m */; };
+		2DEDDCE21719453E00F18063 /* TestDBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEDDCE11719453E00F18063 /* TestDBUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +167,8 @@
 		2DAB577216FCB5A0009F9CF2 /* TestJSONRPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestJSONRPC.m; sourceTree = "<group>"; };
 		2DAB577416FCC51D009F9CF2 /* JSONRPCErrorInternalError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRPCErrorInternalError.h; sourceTree = "<group>"; };
 		2DAB577516FCC51D009F9CF2 /* JSONRPCErrorInternalError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRPCErrorInternalError.m; sourceTree = "<group>"; };
+		2DEDDCE01719453E00F18063 /* TestDBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDBUtil.h; sourceTree = "<group>"; };
+		2DEDDCE11719453E00F18063 /* TestDBUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDBUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -380,12 +383,11 @@
 		2D68BA5416F5A115000E9AA3 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
-				2D56CE541714803A006E679A /* MockDSEngineImpl.h */,
-				2D56CE551714803A006E679A /* MockDSEngineImpl.m */,
+				2DEDDCE317194DB400F18063 /* Engine */,
 				2D56CE5817148468006E679A /* TestDataSource.h */,
 				2D56CE5917148468006E679A /* TestDataSource.m */,
-				2DAB575416FB6509009F9CF2 /* DSSQLiteEngineTest.h */,
-				2DAB575516FB6509009F9CF2 /* DSSQLiteEngineTest.m */,
+				2DEDDCE01719453E00F18063 /* TestDBUtil.h */,
+				2DEDDCE11719453E00F18063 /* TestDBUtil.m */,
 			);
 			name = DataSource;
 			sourceTree = "<group>";
@@ -455,6 +457,17 @@
 				2D56CC8216FEEE9A006E679A /* TestJSONRPCRequest.m */,
 			);
 			name = Gateway;
+			sourceTree = "<group>";
+		};
+		2DEDDCE317194DB400F18063 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				2DAB575416FB6509009F9CF2 /* DSSQLiteEngineTest.h */,
+				2DAB575516FB6509009F9CF2 /* DSSQLiteEngineTest.m */,
+				2D56CE541714803A006E679A /* MockDSEngineImpl.h */,
+				2D56CE551714803A006E679A /* MockDSEngineImpl.m */,
+			);
+			name = Engine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -598,6 +611,7 @@
 				2D56CC9717020A6D006E679A /* MockJSONRPCComponent.m in Sources */,
 				2D56CE561714803A006E679A /* MockDSEngineImpl.m in Sources */,
 				2D56CE5A17148468006E679A /* TestDataSource.m in Sources */,
+				2DEDDCE21719453E00F18063 /* TestDBUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

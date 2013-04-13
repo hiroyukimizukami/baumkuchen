@@ -9,6 +9,7 @@
 #import "TestDataSource.h"
 #import "DataSource.h"
 #import "MockDSEngineImpl.h"
+#import "TestDBUtil.h"
 
 @implementation TestDataSource
 
@@ -19,52 +20,36 @@
     STAssertNoThrow(ds = [[DataSource alloc] initWithEngine:impl], @"use ok");
 }
 
--(void) testQueryOk
+-(void) testSelectOne
 {
     MockDSEngineImpl* impl = [[MockDSEngineImpl alloc] init];
     DataSource* ds = [[DataSource alloc] initWithEngine:impl];
 
     NSString* sql  = @"select 1 from dual";
-    NSDictionary* param = @{@"id" : @"0"};
-
-    NSArray* selectors = @[@"inspectQuery:"];
-    impl.inspector = self;
-    impl.selectors = selectors;
-
-    [ds query:sql WithParam:param];
+    NSNumber* primary = @1;
+    
+    [ds selectOne:sql With:primary];
+    
+    NSString* passedSQL = [[impl latestParams] objectForKey:@"sql"];
+    NSDictionary* passedParam = [[impl latestParams] objectForKey:@"param"];
+    NSNumber* passedPrimary = [passedParam objectForKey:@"id"];
+    STAssertEquals(sql, passedSQL, @"sql is");
+    STAssertEquals(primary, passedPrimary, @"param is"); //It would compare value's allocation?
 }
 
--(void) testCommandOk
+-(void) testSelectAll
 {
     MockDSEngineImpl* impl = [[MockDSEngineImpl alloc] init];
     DataSource* ds = [[DataSource alloc] initWithEngine:impl];
     
-    NSString* sql  = @"update set id = 1 where id = :id";
-    NSDictionary* param = @{@"id" : @"0"};
+    NSString* sql  = @"select 1 from dual";
     
-    NSArray* selectors = @[@"inspectCommand:"];
-    impl.inspector = self;
-    impl.selectors = selectors;
-    impl.mockedResult = [NSArray array];
+    [ds selectAll:sql];
     
-    [ds query:sql WithParam:param];
-    
-}
-
--(void) inspectQuery:(NSArray*)param
-{
-    NSString* sql = [param objectAtIndex:0];
-    NSDictionary* dump = (NSDictionary*) [param objectAtIndex:1];
-    STAssertNotNil(sql, @"sql ok");
-    STAssertNotNil(dump, @"param ok");
-}
-
--(void) inspectCommand:(NSArray*)param
-{
-    NSString* sql = [param objectAtIndex:0];
-    NSDictionary* dump = (NSDictionary*) [param objectAtIndex:1];
-    STAssertNotNil(sql, @"sql ok");
-    STAssertNotNil(dump, @"param ok");
+    NSString* passedSQL = [[impl latestParams] objectForKey:@"sql"];
+    NSDictionary* passedParam = [[impl latestParams] objectForKey:@"param"];
+    STAssertEquals(sql, passedSQL, @"sql is");
+    STAssertEquals(@{}, passedParam, @"param is"); //It would compare value's allocation?
 }
 
 
