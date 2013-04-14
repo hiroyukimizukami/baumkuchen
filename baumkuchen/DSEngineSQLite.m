@@ -22,6 +22,12 @@
     if (self == [super init]) {
         NSArray* paths = NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES);
         NSString* dir = [paths objectAtIndex:0];
+        
+        BOOL isDirExist;
+        [[NSFileManager defaultManager] fileExistsAtPath:dir isDirectory:&isDirExist];
+        if (!isDirExist){
+            dir = NSTemporaryDirectory();
+        }
         NSString* dbPath = [dir stringByAppendingPathComponent:dbFileName];
 
         self.absolutePath = dbPath;
