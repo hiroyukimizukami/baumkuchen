@@ -11,8 +11,7 @@
 
 @protocol ValueObject <DomainData>
 
-@property (strong, readonly, nonatomic) NSNumber* primary;
-@property (strong, readonly, nonatomic) NSString* value;
-@property (strong, readonly, nonatomic) NSString* createdAt;
+@property (strong, nonatomic) id value;
+@property (strong, nonatomic) NSNumber* createdAt;
 
 @end
